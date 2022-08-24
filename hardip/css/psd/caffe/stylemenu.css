@@ -1,0 +1,145 @@
+header {
+    background: url(../caffe/images/Background.png);
+    height: 1300px;
+
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div {
+    display: flex;
+}
+
+
+#logo {
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+#coffecup {
+    height: 25px;
+    margin-top: 50px;
+}
+
+.coffemenu {
+    height: 70px;
+    margin-left: 120px;
+}
+
+.menu {
+    height: 70px;
+    margin-left: 15px;
+}
+
+.hotcoffes {
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.hotcoffe {
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.Espresso {
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 60px;
+}
+
+.hotcoffe2 {
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.menu-txt {
+    text-transform: capitalize;
+    color: white;
+}
+
+.menu-txt ul li {
+    list-style: none;
+}
+
+.hotcoffe-txt a {
+    text-decoration: none;
+    color: white;
+}
+
+.e-txt {
+    margin-left: 120px;
+}
+
+.e-txt li a {
+    text-decoration: none;
+    color: white;
+}
+
+.coldcoffe-txt {
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.coldcoffe {
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.frappucinos-txt {
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 60px;
+}
+
+.frappucinos2 {
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.txt {
+    text-transform: capitalize;
+    color: white;
+}
+
+.txt ul li {
+    list-style: none;
+}
+
+.cold-txt li a {
+    color: white;
+    text-decoration: none;
+}
+
+.frapp-txt li a {
+    color: white;
+    text-decoration: none;
+}
+
+.frapp-txt {
+    margin-left: 120px;
+
+}
+
+.footer {
+    color: white;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: small;
+}
+
+.footer a {
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: white;
+    
+}

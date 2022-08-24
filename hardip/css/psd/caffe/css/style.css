@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* border: 1px solid; */
+}
+
+div {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(14, 5, 5);
+
+}
+
+nav a {
+
+    font-size: 19px;
+    display: inline-block;
+    padding: 40px;
+
+}
+
+.menu a {
+    font-family: Arial;
+
+}
+
+.raw {
+    display: block;
+    background: url(../images/background.home.png);
+    size: 100%;
+    height: 810px;
+}
+
+#logo {
+    height: 40px;
+    margin-top: 1px;
+
+}
+
+.logo {
+    margin-left: 270px;
+    margin-top: 80px;
+}
+
+#coffecup {
+    vertical-align: middle;
+    color: white;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.coffetxt {
+    height: 156px;
+    width: 360px;
+    margin-top: 100px;
+    margin-left: 56px;
+
+}
+
+.headline img {
+    height: 31px;
+    width: 531px;
+    margin-top: 45px;
+    margin-left: 58px;
+}
+
+.discription img {
+    height: 60px;
+    width: 453px;
+    margin-top: 25px;
+    margin-left: 58px;
+    color: black;
+}
+
+.ordernow button {
+    height: 62px;
+    width: 248px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    margin-left: 58px;
+    margin-top: 25px;
+    background-color: rgb(255, 106, 0);
+    border-color: rgb(255, 106, 0);
+    font-size: large;
+}
+
+footer {
+    background: url(../images/Background.png);
+    size: 100%;
+    height: 300px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.logofooter {
+    height: 40px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.logofooter-coffe {
+    height: 30px;
+    margin-top: 68px;
+}
+
+.footer h2 {
+    display: inline-block;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 68px;
+
+}
+
+.info {
+    margin-left: 500px;
+}
+
+.info1 {
+    margin-left: 725px;
+    margin-top: 40px;
+}
+
+.cont {
+    margin-left: 150px;
+}
+
+.cont1 {
+    margin-left: 220px;
+    margin-top: 40px;
+}
+
+.footer-detil ul li {
+    list-style: none;
+}
+
+.footer-detil ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.f-menubar a {
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 370px;
+}
