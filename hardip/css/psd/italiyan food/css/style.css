@@ -8,13 +8,14 @@
 .container {
     width: 1450px;
     margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
 .raw {
     display: flex;
 }
 
-.menu nav ul {
+.menu nav ul li {
     float: left;
 }
 
@@ -23,6 +24,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 802px;
+    /* width: 1440px; */
 }
 
 header a {
@@ -107,6 +109,7 @@ input {
     font-family: "Reey";
     color: #222328;
     margin-top: 100px;
+    
 
 }
 
@@ -121,15 +124,10 @@ input {
 .main-img img {
     margin-left: 90px;
     margin-top: 100px;
-    /* width: 1154px;
-    height: 280px; */
+
 }
 
 
-/* 
-.raw {
-    display: flex;
-} */
 
 .txt ul li {
     display: inline-block;
@@ -170,6 +168,7 @@ button {
 
 .main-info {
     background-color: #27292c;
+    /* width: 1440px; */
 
     background-size: cover;
     height: 500px;
@@ -184,9 +183,7 @@ button {
     font-family: "Reey";
 }
 
-/* .raw {
-    display: flex;
-} */
+
 
 .lorem-info {
     width: 400px;
@@ -223,11 +220,6 @@ button {
 .btn2 {
     text-align: center;
 }
-
-
-/* .raw {
-    display: flex;
-} */
 
 .discount {
     display: inline-block;
@@ -294,7 +286,7 @@ button {
 
     position: absolute;
     bottom: -190px;
-   
+
 
 }
 
@@ -310,16 +302,12 @@ button {
 
 .footer-txt h2 {
     line-height: 220px;
-    /* margin-left: 300px; */
     text-align: center;
     font-size: 58px;
     color: #f8f6f1;
     font-family: "Reey";
 }
 
-/* .raw {
-    display: flex;
-} */
 
 .f-txt ul li {
     display: inline-block;
@@ -331,7 +319,7 @@ button {
     padding: 0 140px;
     line-height: 300px;
 
-    width: 1440px;
+    /* width: 1440px; */
     font-size: 30px;
     font-family: "Reey";
 }
@@ -417,29 +405,6 @@ button {
     height: 800px;
 }
 
-.f-main1 li {
-    list-style: none;
-
-    display: inline-block;
-    line-height: 100px;
-    padding: 0 40px;
-    margin: 0 40px;
-    text-transform: capitalize;
-    font-size: 32px;
-    color: #343434;
-    font-weight: 400;
-    font-family: "Montserrat";
-
-}
-
-/* .about {
-    margin-left: 300px;
-} */
-
-/* .raw {
-    display: flex;
-} */
-
 .container1 {
     margin: 0 auto;
     width: 1440px;
@@ -473,27 +438,99 @@ button {
 .container7 {
     margin: 0 auto;
     width: 1440px;
+     padding: 50px;
+
 }
 
-/* .col {
-    margin: 0 auto;
-    width: 25%;
-} */
+.f-main1 li {
+    list-style: none;
 
-
-
-.f-end ul li.about {
-    margin-left: 200px;
-}
-
-.f-main2 li {
-    width: 274px;
-    height: 200px;
-    font-size: 20px;
+    display: inline-block;
+    line-height: 100px;
+    padding: 0 86px;
+    margin: 0 40px;
+    text-transform: capitalize;
+    font-size: 32px;
     color: #343434;
     font-weight: 400;
     font-family: "Montserrat";
 
-    display: inline-block;
-    margin-left: 40px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-33 {
+    width: 16%;
+}
+.titlehere{
+    width: 600px;
+}
+.titlehere p{
+    width: 500px;
+    font-size: 20px;
+}
+.social-links li{
+    margin-top: 40px;
+    list-style: none;
+display: inline-block;
+}
+.social-links li a{
+    text-decoration: none;
+    color: #343434;
+    font-size: 25px;
+}
+
+.about {
+    display: flex;
+    text-transform: capitalize;
+    line-height: 30px;
+    
+}
+
+.about1 ul li {
+    list-style: none;
+    font-size: 20px;
+ 
+
+    
+}
+.about1{
+    width: 225px;
+}
+
+.about1 ul li a{
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+}
+.other ul li {
+    list-style: none;
+}
+.other{
+    width: 225px;
+}
+.other ul li a{
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+}
+
+.Services ul li{
+list-style: none;
+}
+.Services{
+    width: 225px;
+}
+.Services ul li a{
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+}
+
+
+h2 {
+    color:#343434;
+    text-transform: capitalize;
 }
