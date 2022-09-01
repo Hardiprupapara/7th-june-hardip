@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="icon" href="./images/Place Your Logo Here (Double Click to Edit).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        #header {
+            background: url('./images/Header\ Background.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .menu-bar {
+            margin-left: auto;
+            font-family: "Open Sans";
+
+        }
+
+        .relstiv {
+            position: relative;
+        }
+
+        #wws {
+            position: absolute;
+            left: 160px;
+            top: 20px;
+            font-size: 20px;
+            color: black;
+
+        }
+
+        input {
+            border: none;
+            border-radius: 20px;
+            padding: 15px 20px;
+        }
+
+        .row {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .centar {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .col-50 {
+            width: 600px;
+        }
+
+        .Menu-Name li {
+            display: inline-block;
+            padding: 10px;
+            margin: 45px 10px;
+        }
+
+        .Menu-Name li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .Next-1 {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo {
+            width: 150px;
+            margin: 30px 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @font-face {
+            font-family: reey;
+            src: url(./fonts/Reey-Regular.otf);
+        }
+
+        .comname {
+            font-family: reey;
+            color: white;
+            font-size: 80px;
+            margin: 0px 0 60px 50px;
+        }
+
+        .Name_u {
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 5px;
+            margin: 0 0 0 22px;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin: 30px 0 30px 22px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            background-color: white;
+            color: #2e3034;
+            padding: 8px 30px;
+            border-radius: 20px;
+            word-spacing: 5px;
+            font-size: large;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .dit {
+            width: 59%;
+            color: white;
+            margin: 0 0 270px 22px;
+        }
+
+        .reletev {
+            position: relative;
+        }
+
+        .bavulimg,
+        .page1img {
+            position: absolute;
+        }
+
+        .bavulimg {
+            top: 400px;
+            right: 460px;
+            width: 330px;
+        }
+
+        .page1img {
+            top: 415px;
+            left: 89px;
+            width: 651px;
+        }
+
+        .hedar_tex {
+            text-align: center;
+        }
+
+        .hedar_tex {
+            font-family: reey;
+            font-size: 80px;
+            margin: 70px;
+            font-weight: bold;
+        }
+
+        .Tax {
+            text-align: center;
+            font-family: "Open Sans";
+            width: 480px;
+            margin: 0 auto;
+        }
+
+        .col-33 {
+            margin: 0 auto;
+            width: 33%;
+        }
+
+        .tax01 {
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 800;
+            padding: 0 0 10px 100px;
+
+        }
+
+        .teac {
+            padding: 0 0 0 30px;
+            width: 300px;
+            font-size: 20px;
+            margin: 0 auto;
+
+        }
+
+        .margin {
+            margin: 60px 0 0 0;
+        }
+
+        .photo_1 {
+            height: 378px;
+        }
+
+        .btn_11 {
+            text-align: center;
+            margin: 150px 0 20px 0;
+        }
+
+        .btn_11 a {
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #2e3034;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 30px;
+            letter-spacing: 2px;
+        }
+
+        #Three {
+            background-color: #27292c;
+        }
+
+        .texxx {
+            text-align: center;
+            font-family: "Open Sans";
+            color: white;
+            font-size: 70px;
+            padding: 100px 0 50px 0;
+        }
+
+        .tex2 {
+            width: 597px;
+            padding: 20px;
+        }
+
+        .ceaa {
+            justify-content: center;
+            color: white;
+            padding: 20px auto;
+            font-family: "Open Sans";
+        }
+
+        .aaaaaa {
+            text-decoration: none;
+            text-transform: uppercase;
+            background: white;
+            color: #27292c;
+            padding: 20px 90px;
+            border-radius: 10px;
+        }
+
+        .sasa {
+            text-align: center;
+            padding: 80px;
+            font-weight: 800;
+            font-size: larger;
+        }
+
+        .width50 {
+            width: 50%;
+        }
+
+        .Discount {
+            font-family: "Open Sans";
+            color: #27292c;
+            font-size: 60px;
+            padding: 10px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .adipiscing {
+            padding: 0 0px 0 20px;
+            width: 500px;
+            font-family: "Open Sans";
+        }
+
+        .buttan a {
+            background-color: #27292c;
+            color: white;
+            text-decoration: none;
+            padding: 20px 50px;
+            border-radius: 40px;
+        }
+
+        .buttan {
+            margin: 100px 0 0 20px;
+        }
+
+        .mr50 {
+            margin: auto 0;
+        }
+
+        .pd50 {
+            padding-top: 50px;
+        }
+
+        #Five {
+            background: url('./images/Header\ Background.png') no-repeat center center /cover;
+        }
+
+        .LREREMM {
+            text-align: center;
+            font-family: "Open Sans";
+            font-weight: 900;
+            font-size: 50px;
+            color: white;
+            padding: 90px 0 40px 0;
+        }
+
+        .CENE {
+            width: 600px;
+            margin: 5px auto;
+            padding: 0 0 20px 0;
+            font-family: 'Montserrat';
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .LINE {
+            width: 180px;
+            border-radius: 10px;
+            height: 10px;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .mraaa {
+            width: 1px;
+            margin: 500px 0 0 0;
+            border: 1px solid black;
+        }
+
+        .clasaa {
+            position: relative;
+        }
+
+        .a120,
+        .a121,
+        .a122 {
+            position: absolute;
+        }
+
+        .a120 {
+            left: 360px;
+            width: 60%;
+            bottom: -220px;
+        }
+
+        .a121 {
+            bottom: -218px;
+            left: 252px;
+            width: 35%;
+        }
+
+        .a122 {
+            width: 100%;
+            bottom: 277px;
+        }
+
+        .heedddd {
+            font-family: reey;
+            color: #27292c;
+            font-size: 40px;
+            padding: 20px;
+        }
+
+        .perer {
+            font-family: "Open Sans";
+            color: #27292c;
+            padding: 15px;
+
+        }
+
+        .margin_1 {
+            margin: 180px 0 0 0;
+        }
+
+        .texxxx {
+            font-family: "Open Sans";
+            text-align: center;
+            color: #27292c;
+            margin: 100px auto 0 auto;
+            width: 600px;
+            font-weight: 700;
+        }
+
+        .neww {
+            text-align: center;
+            margin: 50px auto 90px auto;
+            font-family: "Open Sans";
+            font-weight: 600;
+        }
+
+        #seven {
+            background-color: #27292c;
+        }
+
+        .Subscribe {
+            position: relative;
+
+        }
+
+        .Tital {
+            font-family: "Open Sans";
+            color: white;
+            font-size: 90px;
+            padding: 150px 0 0 0;
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+
+        .tooll {
+            font-family: "Open Sans";
+            width: 500px;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+        }
+
+        .inp {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        .inps {
+            padding: 12px 339px 12px 20px;
+            display: inline-block;
+            margin: 70px auto 200px auto;
+        }
+
+        .Subscribe {
+            width: 100%;
+        }
+
+        .Subscribe a {
+            position: absolute;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Open Sans";
+            background-color: #101011;
+            bottom: 196px;
+            left: 710px;
+            padding: 12px 39px;
+            border-radius: 30px;
+        }
+
+        .Deep {
+            position: absolute;
+            bottom: -150px;
+            left: 1px;
+        }
+
+        .fonta {
+            font-family: "Open Sans";
+
+        }
+
+        table {
+            margin: 200px auto 160px auto;
+            width: 95%;
+        }
+
+        td a {
+            text-decoration: none;
+            color: #2e3034;
+        }
+
+        .Th1 {
+            width: 40%;
+        }
+
+        .Th2,
+        .Th3,
+        .Th4 {
+            width: 20%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 5px 0;
+        }
+
+        td a:hover {
+            color: rgb(255, 0, 0);
+            text-shadow: 1px 1px 1px rgb(192, 131, 0);
+        }
+
+        #ws {
+            font-size: 30px;
+            margin: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content_o">
+        <header id=header>
+            <div class="centar">
+                <div class="row">
+                    <div class="menu-bar">
+                        <nav>
+                            <ul class="Menu-Name">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Our story</a></li>
+                                <li><a href="#">Our story</a></li>
+                                <li><a href="#">Contact US</a></li>
+                                <li class="relstiv">
+                                    <input type="search" placeholder="Search">
+                                    <a href="#"><i id="wws" class="fa-solid fa-magnifying-glass"></i></a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="centar">
+                <div class="row">
+                    <div class="col-50">
+                        <div class="logo">
+                            <img src="./images/Place Your Logo Here (Double Click to Edit).png" alt="">
+                        </div>
+                        <div class="comname">
+                            Italian Food
+                        </div>
+                        <div class="Name_u">
+                            LOREMIPSUM DOLOr
+                        </div>
+                        <div class="btn">
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="dit">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt
+                                ut
+                                labore et dolore magna.</p>
+                        </div>
+                    </div>
+                    <div class="col-50 reletev">
+                        <div class="nudalsh">
+                            <img class="nudalshimg" src="./images/Place Your Image Here (Double Click to Edit) (6).png"
+                                alt="">
+                        </div>
+                        <img class="bavulimg" src="./images/Place Your Image Here (Double Click to Edit) .png" alt="">
+                        <img class="page1img" src="./images/Place Your Image Here (Double Click to Edit) (7).png"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="sec">
+            <div class="centar">
+
+                <div class="hedar_tex">
+                    <p>Lorem Ipsum Dolor</p>
+                </div>
+                <div class="Tax">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                    vestibulum vestibulum.
+                </div>
+                <div class="row margin">
+                    <div class="col-33">
+                        <div class="photo_1">
+                            <img src="./images/Place Your Image Here (Double Click to Edit) (8).png" alt="">
+                        </div>
+                        <div class="tax01">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="teac">
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="photo_1">
+                            <img src="./images/Place Your Image Here (Double Click to Edit) (9).png" alt="">
+                        </div>
+                        <div class="tax01">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="teac">
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="photo_1">
+                            <img src="./images/Place Your Image Here (Double Click to Edit) (10).png" alt="">
+                        </div>
+                        <div class="tax01">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="teac">
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing...
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn_11">
+                    <a href="#">Show More</a>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section id="Three">
+        <div class="centar">
+            <div class="texxx">
+                <p>Lorem Ipsum Dolor </p>
+            </div>
+            <div class="row ceaa">
+                <div class="tex2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur
+
+                </div>
+                <div class="tex2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip.
+                </div>
+            </div>
+        </div>
+        <div class="sasa">
+            <a class="aaaaaa" href="#">More Info</a>
+        </div>
+    </section>
+    </div>
+    <div class="centar">
+        <section id="Four">
+            <div class="row pd50">
+                <div class="width50 ">
+                    <img src="./images/Place Your Image Here (Double Click to Edit) (12).png" alt="">
+                </div>
+                <div class="width50 mr50 ">
+                    <div class="Discount">
+                        Discount up to
+                        50% All Excursions
+                    </div>
+                    <div class="adipiscing">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                    <div class="buttan">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="width50 mr50">
+                    <div class="Discount">
+                        January’s Promo:
+                        Buy 1 Get 1 Free!
+                    </div>
+                    <div class="adipiscing">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                    <div class="buttan">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+                <div class="width50">
+                    <img src="./images/Place Your Image Here (Double Click to Edit) (8).png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <section id="Five">
+        <div class="centar">
+            <div class="LREREMM">
+                Lorem Ipsum Dolor Sit Amer
+            </div>
+            <div class="CENE">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
+            <div class="LINE"></div>
+            <div class="mraaa"></div>
+            <div class="clasaa">
+                <img class="a120" src="./images/Place Your Image Here (Double Click to Edit) (13).png" alt="">
+                <img class="a121" src="./images/Place Your Image Here (Double Click to Edit) (14).png" alt="">
+                <img class="a122" src="./images/Place Your Image Here (Double Click to Edit)  (1).png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="six">
+        <div class="centar">
+            <div class="row margin_1">
+                <div class="col-33">
+                    <div class="heedddd">
+                        Lorem Ipsum
+                    </div>
+                    <div class="perer">
+                        Lorem ipsum dolor sit amet, consecte
+                        sectetur adipisicing elit, tation omne
+                        ullamco laboris nisi ut aliqolore.
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="heedddd">
+                        Lorem Ipsum
+                    </div>
+                    <div class="perer">
+                        Lorem ipsum dolor sit amet, consecte
+                        sectetur adipisicing elit, tation omne
+                        ullamco laboris nisi ut aliqolore.
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="heedddd">
+                        Lorem Ipsum
+                    </div>
+                    <div class="perer">
+                        Lorem ipsum dolor sit amet, consecte
+                        sectetur adipisicing elit, tation omne
+                        ullamco laboris nisi ut aliqolore.
+                    </div>
+                </div>
+            </div>
+            <div class="texxxx">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+            </div>
+            <div class="neww">
+                Lorem Ipsum
+            </div>
+        </div>
+    </section>
+    <section id="seven">
+        <div class="centar">
+            <div class="Tital">
+                Title Here
+            </div>
+            <div class="tooll">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                vestibulum.
+            </div>
+            <div class="inp">
+                <input class="inps" type="search" placeholder="Your Email">
+                <div class="Subscribe">
+
+                    <a href="#">Subscribe</a>
+                    <img class="Deep" src="./images/Place Your Image Here (Double Click to Edit) (15).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="eight">
+        <div class="centar fonta">
+            <table>
+                <tr>
+                    <th class="Th1">Title Here</th>
+                    <th class="Th2">About</th>
+                    <th class="Th3">Services</th>
+                    <th class="Th4">Other</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus
+                        ex. Etiam nec dignissim elit, at dignissim enim.
+                    </td>
+                    <td><a href="#">History</a></td>
+                    <td><a href="#">How to Order</a></td>
+                    <td><a href="#">Contact Us</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Our Team</a></td>
+                    <td><a href="#">Our Product</a></td>
+                    <td><a href="#">Help</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Brand Guidelines</a></td>
+                    <td><a href="#">Order Status</a></td>
+                    <td><a href="#">Privacy</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <a href="#"><i id="ws" class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i id="ws" class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i id="ws" class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i id="ws" class="fa-brands fa-whatsapp"></i></a>
+                    </td>
+                    <td><a href="#">Terms&Condition</a></td>
+                    <td><a href="#">Promo</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Priacy Policy</a></td>
+                    <td><a href="#">Payment Method</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

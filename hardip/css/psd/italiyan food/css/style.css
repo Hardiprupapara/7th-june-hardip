@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.raw {
+    display: flex;
+}
+
+.menu nav ul {
+    float: left;
+}
+
+header {
+    background-image: url(../image/Header\ Backgroundhome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 802px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+@font-face {
+    font-family: reey;
+    src: url(../font/Reey-Regular.otf);
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin-left: 100px;
+    list-style: none;
+
+}
+
+.input-icon i {
+    position: absolute;
+    line-height: 100px;
+    margin-left: 70px;
+}
+
+input {
+    border-radius: 15px 15px 15px 15px;
+    width: 100px;
+    height: 30px;
+}
+
+.logo img {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.logo {
+    display: inline;
+}
+
+.title h1 {
+    font-size: 80px;
+    color: #ffffff;
+    filter: drop-shadow(0px 5px 2.5px rgba(84, 82, 79, 0.22));
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: reey;
+}
+
+.title p {
+    margin-left: 50px;
+    color: white;
+    text-align: justify;
+    width: 335px;
+
+}
+
+.home3 img {
+    width: 700px;
+    vertical-align: middle;
+    margin-top: -145px;
+    margin-left: 100px;
+}
+
+.main {
+    height: 200px;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 75px;
+    font-family: "Reey";
+    color: #222328;
+    margin-top: 100px;
+
+}
+
+.main p {
+    margin-top: 50px;
+    text-align: justify;
+    width: 455PX;
+    margin-left: 500px;
+
+}
+
+.main-img img {
+    margin-left: 90px;
+    margin-top: 100px;
+    /* width: 1154px;
+    height: 280px; */
+}
+
+
+/* 
+.raw {
+    display: flex;
+} */
+
+.txt ul li {
+    display: inline-block;
+}
+
+.txt ul li a {
+    text-decoration: none;
+    color: #222328;
+    padding: 0 140px;
+    font-size: 30px;
+
+}
+
+.txt2 ul li {
+    padding: 0 68px;
+    display: inline-block;
+}
+
+.btn {
+    padding: 100px;
+    text-align: center;
+
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button {
+    width: 334px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #343434;
+
+}
+
+.main-info {
+    background-color: #27292c;
+
+    background-size: cover;
+    height: 500px;
+
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 75px;
+    line-height: 170px;
+    color: #ffffff;
+    font-family: "Reey";
+}
+
+/* .raw {
+    display: flex;
+} */
+
+.lorem-info {
+    width: 400px;
+    margin-left: 270px;
+    font-size: 20px;
+    color: white;
+}
+
+.lorem-info2 {
+    width: 400px;
+    margin-left: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.btn2 button {
+    margin-top: 100px;
+    width: 270px;
+    height: 58px;
+    border-radius: 22px;
+    background-color: #fdfdfd;
+
+
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: #222328;
+    font-size: 20px;
+}
+
+.btn2 {
+    text-align: center;
+}
+
+
+/* .raw {
+    display: flex;
+} */
+
+.discount {
+    display: inline-block;
+
+}
+
+
+.discount img {
+    margin-top: 100px;
+    width: 600px;
+    margin-left: 140px;
+}
+
+.disc-txt h2 {
+    font-size: 50px;
+    margin-top: 184px;
+    margin-left: 71px;
+}
+
+.disc-txt-main {
+    width: 450px;
+    font-size: 20px;
+    margin-left: 71px;
+    margin-top: 52px;
+
+}
+
+.disc-txt1 {
+    margin-left: 100px;
+}
+
+.offers {
+    margin-left: 140px;
+}
+
+.disc-img img {
+    margin-top: 100px;
+    width: 600px;
+    margin-left: 50px;
+}
+
+.disc-btn {
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 20px;
+
+}
+
+.disc-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-img {
+    background: url(../image/Header\ Backgroundhome.png) no-repeat center center /cover;
+    position: relative;
+    background-size: cover;
+    height: 1085px;
+
+    position: relative;
+}
+
+.pizza img {
+
+    position: absolute;
+    bottom: -190px;
+   
+
+}
+
+.CENE {
+    font-size: 20px;
+    color: white;
+    width: 600px;
+    text-align: center;
+    margin-left: 410px;
+
+
+}
+
+.footer-txt h2 {
+    line-height: 220px;
+    /* margin-left: 300px; */
+    text-align: center;
+    font-size: 58px;
+    color: #f8f6f1;
+    font-family: "Reey";
+}
+
+/* .raw {
+    display: flex;
+} */
+
+.f-txt ul li {
+    display: inline-block;
+}
+
+.f-txt ul li a {
+    text-decoration: none;
+    color: #222328;
+    padding: 0 140px;
+    line-height: 300px;
+
+    width: 1440px;
+    font-size: 30px;
+    font-family: "Reey";
+}
+
+.f2-txt ul li {
+
+    padding: 0 68px;
+    display: inline-block;
+}
+
+.f-lorem {
+    font-weight: 600;
+    margin-left: 510px;
+    width: 465px;
+    margin-top: 170px;
+
+}
+
+.f3-txt {
+    line-height: 100px;
+    text-align: center;
+
+}
+
+.email {
+
+    text-align: center;
+    height: 600px;
+    background-color: #27292c;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: capitalize;
+    position: relative;
+}
+
+.f-title {
+    line-height: 300px;
+
+
+}
+
+.title-lorem p {
+    font-size: 20px;
+
+}
+
+.input2 {
+    margin-top: 50px;
+    width: 660px;
+    height: 40px;
+    text-transform: capitalize;
+    position: absolute;
+    margin-right: 100px;
+    padding: 0 10px;
+}
+
+.input button {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    margin-top: 51px;
+    margin-left: 466px;
+    background-color: #54524f;
+    ;
+}
+
+.input button a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.liveimg {
+    position: relative;
+    margin-top: -485px;
+}
+
+.liveimg img {
+
+    height: 800px;
+}
+
+.f-main1 li {
+    list-style: none;
+
+    display: inline-block;
+    line-height: 100px;
+    padding: 0 40px;
+    margin: 0 40px;
+    text-transform: capitalize;
+    font-size: 32px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Montserrat";
+
+}
+
+/* .about {
+    margin-left: 300px;
+} */
+
+/* .raw {
+    display: flex;
+} */
+
+.container1 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.container2 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.container3 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.container4 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.container5 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.container6 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.container7 {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+/* .col {
+    margin: 0 auto;
+    width: 25%;
+} */
+
+
+
+.f-end ul li.about {
+    margin-left: 200px;
+}
+
+.f-main2 li {
+    width: 274px;
+    height: 200px;
+    font-size: 20px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Montserrat";
+
+    display: inline-block;
+    margin-left: 40px;
+}
