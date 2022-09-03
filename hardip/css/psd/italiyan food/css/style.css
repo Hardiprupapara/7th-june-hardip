@@ -39,6 +39,7 @@ nav ul li a {
     color: #ffffff;
     font-weight: 700;
     font-family: "Open Sans";
+    /* justify-content: end; */
 }
 
 @font-face {
