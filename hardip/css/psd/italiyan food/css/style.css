@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid; */
+    /* border: 1px solid;   */
+}
+body{
+    overflow-x: hidden;
 }
 
 .container {
@@ -16,8 +19,6 @@
 }
 
 .menu {
-    
-    /* float: left; */
     margin-left: auto;
 }
 
@@ -26,7 +27,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 802px;
-    /* width: 1440px; */
     margin: 0 auto;
 }
 
@@ -42,7 +42,6 @@ nav ul li a {
     color: #ffffff;
     font-weight: 700;
     font-family: "Open Sans";
-    /* justify-content: end; */
 }
 
 @font-face {
@@ -53,9 +52,9 @@ nav ul li a {
 nav ul li {
     display: inline-block;
     line-height: 100px;
-    margin: 10px;
+    padding: 20px;
     list-style: none;
-
+    margin-right: 20px;
 }
 
 .input-icon i {
@@ -172,8 +171,6 @@ button {
 
 .main-info {
     background-color: #27292c;
-    /* width: 1440px; */
-
     background-size: cover;
     height: 500px;
 
@@ -251,6 +248,7 @@ button {
 
 }
 
+
 .disc-txt1 {
     margin-left: 100px;
 }
@@ -282,7 +280,6 @@ button {
     position: relative;
     background-size: cover;
     height: 1085px;
-
     position: relative;
 }
 
@@ -290,6 +287,7 @@ button {
 
     position: absolute;
     bottom: -190px;
+    right: 0px;
 
 
 }
@@ -322,8 +320,6 @@ button {
     color: #222328;
     padding: 0 140px;
     line-height: 300px;
-
-    /* width: 1440px; */
     font-size: 30px;
     font-family: "Reey";
 }
