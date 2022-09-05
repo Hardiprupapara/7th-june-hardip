@@ -15,8 +15,10 @@
     display: flex;
 }
 
-.menu nav ul li {
-    float: left;
+.menu {
+    
+    /* float: left; */
+    margin-left: auto;
 }
 
 header {
@@ -25,6 +27,7 @@ header {
     background-size: cover;
     height: 802px;
     /* width: 1440px; */
+    margin: 0 auto;
 }
 
 header a {
@@ -50,7 +53,7 @@ nav ul li a {
 nav ul li {
     display: inline-block;
     line-height: 100px;
-    margin-left: 100px;
+    margin: 10px;
     list-style: none;
 
 }
