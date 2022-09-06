@@ -394,7 +394,7 @@ body{
 }
 
 .sec6-txt {
-    /* margin: 147px 305px 0px 0px; */
+    margin: 147px 305px 0px 0px;
 }
 
 .sec6-txt p {
@@ -432,7 +432,7 @@ body{
 
 .back-img {
     background: url(../images/dog4.png) no-repeat center center / cover;
-
+    
 }
 
 .sec-col img {
@@ -470,3 +470,107 @@ margin-top: 500px;
     color: #2ea2d0;
 
 }
+/* @media (min-width: 576px) {
+    .container {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+    
+    .col-50 {
+        width: 100%;
+    }
+    
+    .col-40 {
+        width: 100%;
+    }
+    
+    .col-16 {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .row{
+        flex-wrap: nowrap;
+    }
+    .container {
+        width: 740px;
+        margin: 0 auto;
+    }
+
+    .col-33 {
+        width: 50%;
+    }
+    
+    .col-50 {
+        width: 50%;
+    }
+    
+    .col-40 {
+        width: 40%;
+    }
+
+    .col-16 {
+        width: 16.66%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .row{
+        flex-wrap: nowrap;
+    }
+    .container {
+        width: 950px;
+        margin: 0 auto;
+    }
+
+    .col-33 {
+        width: 33.33%;
+    }
+    
+    .col-50 {
+        width: 50%;
+    }
+    
+    .col-40 {
+        width: 40%;
+    }
+    
+    .col-16 {
+        width: 16.66%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .row{
+        flex-wrap: nowrap;
+    }
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    .col-33 {
+        width: 33.33%;
+    }
+    
+    .col-50 {
+        width: 50%;
+    }
+    
+    .col-40 {
+        width: 40%;
+    }
+    
+    .col-16 {
+        width: 16.66%;
+    }
+    
+} */
