@@ -8,18 +8,20 @@ body{
     overflow-x: hidden;
 }
 .con-home{
-    background: url(../images/Header\ Background.png);
+    background: url(../images/Header\ Background.png) no-repeat;
 
 }
 
 .container {
     margin: 0 auto;
     width: 1440px;
+    /* width: 100%; */
 
 }
 
 .raw {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify {
@@ -38,8 +40,8 @@ body{
 .menu nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 90px;
-    line-height: 200px;
+    padding: 45px;
+    /* line-height: 200px; */
 }
 
 .menu nav ul li a {
@@ -52,20 +54,20 @@ body{
     font-family: "Montserrat";
 }
 
-/* .contauner2 {
-    width: 1440px;
-    margin: 0 auto;
-} */
 
 .col-50 {
     margin: 0 auto;
     width: 50%;
+}
+.home-img{
+    position: relative;
 }
 
 .home-img img {
 
     margin-top: 45px;
     position: absolute;
+    width: 500px;
 }
 
 .home-txt {
@@ -84,28 +86,24 @@ body{
 
 .home-txt img {
     margin-top: 30px;
+    width: 100%;
 }
 
 .home-page {
-    display: flex;
+    display: flex;  
 }
 
 .home-img2 {
-    margin-left: 240px;
+    margin-left: -10px;
 }
 
 .home-img2 img {
-    width: 465px;
+    width: 445px;
 }
-
-/* .container2 {
-    margin: 0 auto;
-    width: 1440px;
-} */
 
 .ccol-33 {
     margin: 0 auto;
-    width: 33%;
+    width: 33.33%;
 }
 
 .sec-txt p a {
@@ -168,11 +166,12 @@ body{
 .sec-img2 img {
     height: 300px;
     margin-top: 115px;
-    margin-left: 85px;
+    /* margin-left: 85px; */
+    width: 100%;
 }
 
 .cont-3 {
-    background-image: url(../images/Chicken\ Image.png);
+    background: url(../images/Chicken\ Image.png) no-repeat  ;
 }
 
 .smart img {
@@ -209,10 +208,7 @@ body{
 
 }
 
-/* .container4 {
-    width: 1440px;
-    margin: 0 auto;
-} */
+
 
 .s4-txt h2 {
     font-size: 33px;
@@ -227,12 +223,13 @@ body{
 
 .s4-txt {
     text-align: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    /* padding-top: 200px; */
 }
 
 .s4-txt p {
     text-align: center;
-    width: 525px;
+    /* width: 525px;     */
     height: 100px;
     margin-left: 220px;
     font-size: 21px;
@@ -243,9 +240,9 @@ body{
 }
 
 .s4-img img {
-    height: 424px;
-    width: 342px;
-    margin-left: 185px;
+    /* height: 424px; */
+    width: 300px;
+    /* margin-left: 185px; */
 }
 
 .s4-txt button {
@@ -319,8 +316,8 @@ body{
 }
 
 .sec5-txt2 {
-    margin-left: 135px;
-    margin-top: 15px;
+    margin-left: 435px;
+    margin-top: 110px;
 }
 
 .sec5-txt2 h2 {
@@ -331,8 +328,8 @@ body{
     color: #452a31;
     font-weight: 700;
     font-family: "Amatic SC";
-    margin-top: 100px;
-    margin-left: 400px;
+    /* margin-top: 100px;
+    margin-left: 400px; */
 }
 .col-img{
     position: relative;
@@ -342,17 +339,17 @@ body{
     margin-bottom: 100px;
     position: absolute;
     top: -93px;
-    left: 138px;
+    left: 105px;
 }
 
 .sec5-txt2 p {
-    width: 415px;
+    width: 365px;
     height: 51px;
     font-size: 18px;
     line-height: 18px;
     color: #3d3d3d;
     font-weight: 400;
-    margin-left: 400px;
+    /* margin-left: 400px; */
 }
 
 .button2 button {
@@ -361,20 +358,17 @@ body{
     background-color: #2ea2d0;
     margin-top: 42px;
     margin-right: 85px;
-    margin-left: 400px;
+    /* margin-left: 400px; */
 }
 
 .button2 a {
     text-decoration: none;
     color: white;
     font-size: 15px;
-    padding: 14px 44px;
+    padding: 10px 41px;
 }
 
-/* .container6 {
-    margin: 0 auto;
-    width: 1440px;
-} */
+
 
 .sec6-img img {
     margin-left: 95px;
@@ -421,22 +415,19 @@ body{
     text-decoration: none;
     text-transform: capitalize;
     color: white;
-    padding: 12px 48    px;
+    padding: 12px 48px;
 
 }
-/* 
-.container7 {
-    width: 1440px;
-    margin: 0 auto;
-} */
+
 
 .back-img {
-    background: url(../images/dog4.png) no-repeat center center / cover;
+    background: url(../images/dog4.png) no-repeat ;
+    
     
 }
 
 .sec-col img {
-    margin-left: 635px;
+    margin-left: 570px;
 
 }
 
@@ -452,125 +443,97 @@ body{
     width: 325px;
 }
 .sec-col p{
-    margin-left: 635px;
-    /* text-align: center; */
-    margin-top: 30px;
+    margin-left: 570px;
+    text-align: center;
+    margin-top: 10px;
 }
 .footer ul li{
 list-style: none;
 display: inline-block;
 font-size: 25px;
-margin-top: 500px;
+margin-top: 480px;
+
 
 }
-.footer ul{
-    margin-left: 150px;
-}
+
 .footer ul li a{
     color: #2ea2d0;
 
 }
-/* @media (min-width: 576px) {
+
+/* .container {
+            
+    width: 100%;
+    margin: 0 auto;
+} */
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* .col-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.col-25 {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.col-33 {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+
+.col-50 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-25 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-33 {
+    width: 100%;
+    margin: 0 auto;
+}
+@media(min-width:576px) {
     .container {
         width: 540px;
-        margin: 0 auto;
     }
-
-    .col-33 {
-        width: 100%;
-    }
-    
-    .col-50 {
-        width: 100%;
-    }
-    
-    .col-40 {
-        width: 100%;
-    }
-    
-    .col-16 {
-        width: 100%;
-    }
-    
 }
 
-@media (min-width: 768px) {
-    .row{
-        flex-wrap: nowrap;
-    }
+@media(min-width:768px) {
     .container {
-        width: 740px;
-        margin: 0 auto;
+        width: 720px;
     }
 
-    .col-33 {
-        width: 50%;
-    }
-    
     .col-50 {
         width: 50%;
     }
-    
-    .col-40 {
-        width: 40%;
+
+    .col-25 {
+        width: 25%;
     }
 
-    .col-16 {
-        width: 16.66%;
+    .col-33 {
+        width: 33.33%;
     }
-    
 }
 
-@media (min-width: 992px) {
-    .row{
-        flex-wrap: nowrap;
-    }
+@media(min-width:992px) {
     .container {
         width: 950px;
-        margin: 0 auto;
     }
-
-    .col-33 {
-        width: 33.33%;
-    }
-    
-    .col-50 {
-        width: 50%;
-    }
-    
-    .col-40 {
-        width: 40%;
-    }
-    
-    .col-16 {
-        width: 16.66%;
-    }
-    
 }
 
-@media (min-width: 1200px) {
-    .row{
-        flex-wrap: nowrap;
-    }
+@media(min-width:1400px) {
     .container {
-        width: 1140px;
-        margin: 0 auto;
+        width:1380px;
     }
-
-    .col-33 {
-        width: 33.33%;
-    }
-    
-    .col-50 {
-        width: 50%;
-    }
-    
-    .col-40 {
-        width: 40%;
-    }
-    
-    .col-16 {
-        width: 16.66%;
-    }
-    
 } */
