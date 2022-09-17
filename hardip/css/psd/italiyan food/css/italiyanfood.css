@@ -5,20 +5,23 @@
     /* border: 1px solid; */
 }
 
-body{
+/* body {
     overflow-x: hidden;
-}
+} */
+
 .background {
     background: url(../image/Header\ Backgroundhome.png);
-    
+
 }
 
 .raw {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
-    width: 1400px;
+    width: 100%;
+    /* width: 1400px; */
     margin: 0 auto;
 }
 
@@ -28,6 +31,15 @@ body{
 
 .align {
     align-items: center;
+}
+
+.col-50 {
+    width: 100%;
+
+}
+
+.col-33 {
+    width: 100%;
 }
 
 .menu ul li {
@@ -42,6 +54,7 @@ body{
     text-transform: capitalize;
     font-size: 19px;
 }
+
 .input-icon i {
     position: absolute;
     line-height: 30px;
@@ -60,10 +73,12 @@ input {
     font-family: reey;
     src: url(./font/Reey-Regular.otf);
 }
-.logo{
+
+.logo {
     position: relative;
 }
-.logo img{
+
+.logo img {
     position: absolute;
     top: 40px;
     left: 100px;
@@ -78,10 +93,7 @@ input {
     text-transform: capitalize;
 }
 
-.col-50 {
-    width: 50%;
-    margin: 0 auto;
-}
+
 
 .head-txt {
     padding: 130px;
@@ -93,13 +105,31 @@ input {
     line-height: 100px;
 }
 
-.head-txt button {
-    border-radius: 15px;
-    padding: 8px 10px;
-    font-size: 20px;
-    font-weight: 700;
+.head-txt button a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
     text-transform: capitalize;
-    color: rgb(13, 13, 54);
+
+
+}
+
+.head-txt button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background-color: #343434;
+    color: white;
+    transition: .5s ease;
+    border-radius: 38px;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+        0 0 10px 4px #799be6;
+    border-radius: 10px;
 
 }
 
@@ -296,6 +326,7 @@ input {
     top: 50px;
     left: 445px;
     position: absolute;
+
 }
 
 .sec5-pizzapis {
@@ -363,7 +394,7 @@ input {
     color: #fff;
     font-size: 19px;
     text-align: center;
-    
+
 }
 
 .serch input {
@@ -385,8 +416,14 @@ input {
     border-radius: 20px;
     background-color: #343434;
     position: absolute;
-    left: 802px;
-    top: 102px;
+    left: 800px;
+    top: 100px;
+    transition: .5s ease;
+    cursor: pointer;
+    
+}
+.search button:hover{
+    background: transparent;
 
 }
 
@@ -408,20 +445,24 @@ input {
     left: 95px;
     top: -60px;
 }
-.titlehere{
-    width: 600px; 
+
+.titlehere {
+    width: 600px;
     padding: 100px;
 }
-.titlehere p{
-    width: 500px;
+
+.titlehere p {
+    width: 395px;
     font-size: 20px;
 }
-.social-links li{
+
+.social-links li {
     margin-top: 40px;
     list-style: none;
-display: inline-block;
+    display: inline-block;
 }
-.social-links li a{
+
+.social-links li a {
     text-decoration: none;
     color: #343434;
     font-size: 25px;
@@ -432,95 +473,46 @@ display: inline-block;
     text-transform: capitalize;
     line-height: 30px;
     padding: 100px;
-    
+
 }
 
 .about1 ul li {
     list-style: none;
     font-size: 20px;
- 
-
-    
-}
-.about1{
-    width: 33%;
 }
 
-.about1 ul li a{
+
+.about1 ul li a {
     text-decoration: none;
     color: #343434;
     font-size: 20px;
 }
+
 .other ul li {
     list-style: none;
 }
-.other{
-    width: 33%;
-}
-.other ul li a{
+
+.other ul li a {
     text-decoration: none;
     color: #343434;
     font-size: 20px;
 }
 
-.Services ul li{
-list-style: none;
+.Services ul li {
+    list-style: none;
 }
-.Services{
-    width: 33%;
-}
-.Services ul li a{
+
+.Services ul li a {
     text-decoration: none;
     color: #343434;
     font-size: 20px;
 }
 
 h2 {
-    color:#343434;
+    color: #343434;
     text-transform: capitalize;
 }
 
-/* .container {
-            
-    width: 100%;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-50 {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.col-25 {
-    width: 25%;
-    margin: 0 auto;
-}
-
-.col-33 {
-    width: 33.33%;
-    margin: 0 auto;
-}
-
-
-.col-50 {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.col-25 {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.col-33 {
-    width: 100%;
-    margin: 0 auto;
-}
 @media(min-width:576px) {
     .container {
         width: 540px;
@@ -549,10 +541,11 @@ h2 {
     .container {
         width: 950px;
     }
+    
 }
 
-@media(min-width:1200px) {
+@media(min-width:1400px) {
     .container {
-        width: 1160px;
+        width: 1350px;
     }
-} */
+} 
