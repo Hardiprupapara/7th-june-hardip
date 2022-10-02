@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#background {
+    background: url(../photo/Background.png);
+}
+
+.row {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-30 {
+    width: 33.33%;
+}
+
+.posi-rel {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search i {
+    color: #115c90;
+    right: 240px;
+}
+
+.logo img {
+    margin: 15px;
+}
+
+.search input {
+    border: 0;
+    border-bottom: 2px solid #115c90;
+    background-color: transparent;
+    position: relative;
+
+}
+
+.social-txt h1 {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 107px;
+    letter-spacing: -4px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    line-height: 96px;
+}
+
+.span-est {
+    left: 300px;
+    top: 125px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+
+}
+
+.span-1999 {
+    left: 832px;
+    top: 125px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+}
+
+.txt1 {
+    margin: 140px 0;
+    color: #115c90;
+    text-align: center;
+}
+
+.txt1 p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.txt1 button {
+    background-color: #115c90;
+    border-radius: 15px;
+    height: 30px;
+    width: 135px;
+}
+
+.txt1 a {
+    color: #eae8d7;
+}
+
+.txt2 {
+    margin: 140px 0;
+    color: #115c90;
+    text-align: center;
+}
+
+.txt2 button {
+    background-color: #eae8d7;
+    border-radius: 15px;
+    height: 30px;
+    width: 135px;
+    border: 1px solid #115c90;
+}
+
+.txt2 p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.txt2 a {
+    color: #115c90;
+}
+
+.home-img img {
+    /* object-fit: contain; */
+    width: 395px;
+    height: 425px;
+    top: 100px;
+
+}
+
+#sec2-backg {
+    background: url(../photo/Background\ \(2\).png);
+}
+
+.sec2-img img {
+    width: 287px;
+    height: 322px;
+    margin-top: 330px;
+    margin-left: 55px;
+    margin-bottom: 45px;
+}
+
+
+.sec2-txt h2{
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 95px;
+}
+
+.sec2-txt p {
+    font-size: 37px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    font-family: "Old Standard TT";
+}
+
+.sec2-img2 img {
+    width: 287px;
+    height: 322px;
+    margin-top: 45px;
+    margin-left: 55px;
+}
+.sketch{
+    top: 70px;
+    left: -190px;
+}
+.sketch1{
+    top: 510px;
+    right: -240px;
+}
