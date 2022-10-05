@@ -46,12 +46,8 @@
 }
 
 .menu a:hover {
-
-    /* box-shadow: 0 0 10px 0 #799be6 inset,
-        0 0 10px 4px #799be6; */
-        border-bottom:2px solid #799be6;
-        transition: all.2s ease;
-     
+    border-bottom: 2px solid #799be6;
+    transition: all.2s ease
 }
 
 button a {
@@ -534,6 +530,158 @@ h2 {
     text-transform: capitalize;
 }
 
+@media(min-width:320px) {
+    .container {
+        width: 310px;
+
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+    .menu ul li a {
+        padding: 0px;
+    }
+    .logo img {
+        top: 145px;
+        left: 15px;
+        width: 100px;
+    }
+    .head-txt {
+        padding: 0px;
+    }
+
+    .head-txt h1 {
+        font-family: reey;
+        font-weight: 600;
+        font-size: 39px;
+        width: 155px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+    .head-txt p {
+        color: #fff;
+        text-align: justify;
+        width: 151px;
+        margin-top: 50px;
+    }
+
+    .img1 {
+        width: 100px;
+        height: 500px;
+    }
+
+    .img2 {
+        top: 370px;
+        left: 75px;
+        width: 100px;
+        height: 400px;
+    }
+
+    .sec2-img img {
+        width: 80%;
+    }
+
+    .sec2-btn button {
+        width: 100px;
+        height: 60px;
+    }
+    .sec3-txt {
+        padding: 50px;
+        margin-left: 0px;
+        color: #fff;
+        width: 314px;
+        text-align: justify;
+    }
+    .sec4-img img {
+        width: 100px;
+        margin: 40px;
+    }
+    .sec4-txt h2 {
+        font-size: 58px;
+        color: #27292c;
+        font-weight: 700;
+        font-family: "Open Sans";
+        width: 100px;
+        margin: 80px;
+    }
+    .sec4-txt p {
+        width: 198px;
+        height: 175px;
+        font-size: 29px;
+        color: #27292c;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: justify;
+        margin: 0 80px;
+    }
+    .sec5-img img {
+    
+        display: none;
+    }
+    .sec5-head h2 {
+        font-size: 37px;}
+        .sec5-pizza img {
+            top: 50px;
+            left: 445px;
+            position: absolute;
+            display: none;
+        }
+        .sec5-pizzapis img {
+            position: absolute;
+            top: 470px;
+            left: 345px;
+            display: none;
+        }
+        .sec6-dcr {
+            margin-top: 200px;
+            text-align: center;
+            font-size: 19px;
+            width: 100px;
+            margin-left: 0px;
+        }
+        .sec7-img img {
+            position: absolute;
+            width: 1200px;
+            height: 700px;
+            left: 95px;
+            top: -60px;
+            display: none;
+        }
+        .serch input {
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 100px;
+        }
+        .serch button {
+            width: 200px;
+            height: 42px;
+            border-radius: 20px;
+            background-color: #343434;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            transition: .5s ease;
+            cursor: pointer;
+        }
+        .titlehere p {
+            width: 323px;
+            text-align: justify;
+            font-size: 20px;
+        }
+}
+
 @media(min-width:425px) {
     .container {
         width: 420px;
@@ -557,6 +705,7 @@ h2 {
         background-repeat: no-repeat;
         background-size: cover
     }
+
     .menu ul li a {
         color: #fff;
         text-decoration: none;
@@ -564,12 +713,14 @@ h2 {
         font-size: 19px;
         padding: 5px;
     }
+
     .logo img {
         position: absolute;
         top: 80px;
         left: 310px;
         width: 100px;
     }
+
     .head-txt p {
         color: #fff;
         text-align: justify;
@@ -577,9 +728,11 @@ h2 {
         margin-top: 50px;
         font-size: 20px;
     }
+
     .head-txt {
         padding: 0px;
     }
+
     .head-txt h1 {
         font-family: reey;
         font-weight: 600;
@@ -588,13 +741,13 @@ h2 {
         color: #fff;
         text-transform: capitalize;
     }
-    
+
 
     .img1 {
         width: 400px;
         height: 400px;
         top: 60px;
-    } 
+    }
 
     .img2 {
         top: 350px;
@@ -602,12 +755,14 @@ h2 {
         width: 300px;
         height: 300px;
     }
+
     .img3 {
         top: 385px;
         left: -35px;
         width: 150px;
         height: 150px;
     }
+
     .sec2-txt h2 {
         font-family: reey;
         text-align: center;
@@ -615,18 +770,21 @@ h2 {
         text-transform: capitalize;
         line-height: 200px;
     }
+
     .sec2-btn {
         text-align: center;
         padding: 65px;
     }
+
     .sec4-img img {
         width: 80%;
         margin: 40px;
     }
-    .sec2-img img{
+
+    .sec2-img img {
         width: 80%;
     }
-   
+
     .sec3-txt {
         padding: 50px;
         margin-left: 35px;
@@ -634,6 +792,7 @@ h2 {
         width: 343px;
         text-align: justify;
     }
+
     .sec4-txt h2 {
         font-size: 58px;
         color: #27292c;
@@ -642,9 +801,10 @@ h2 {
         width: 375px;
         margin: 20px;
     }
+
     .sec4-txt p {
         width: 375px;
-       
+
         font-size: 25px;
         color: #27292c;
         font-weight: 400;
@@ -652,6 +812,7 @@ h2 {
         text-align: justify;
         margin: 0 20px;
     }
+
     .sec5-head h2 {
         font-size: 25px;
         color: #f8f6f1;
@@ -677,6 +838,7 @@ h2 {
         left: -5px;
         width: 45%;
     }
+
     .sec5-backg {
         background: url(../image/Header\ Backgroundhome.png);
         height: 640px;
@@ -689,6 +851,7 @@ h2 {
         width: 105%; */
         display: none;
     }
+
     .sec6-head h2 {
         font-size: 42px;
         color: #393939;
@@ -697,6 +860,7 @@ h2 {
         line-height: 200px;
         text-align: center;
     }
+
     .sec6-head p {
         /* width: 409px; */
         padding: 0px 40px;
@@ -707,6 +871,7 @@ h2 {
         font-weight: 400;
         font-family: "Open Sans";
     }
+
     .serch button {
         width: 150px;
         height: 42px;
@@ -718,6 +883,7 @@ h2 {
         transition: .5s ease;
         cursor: pointer;
     }
+
     .serch input {
         width: 419px;
         height: 40px;
@@ -726,7 +892,7 @@ h2 {
         margin-top: 100px;
     }
 
-   
+
 
     .sec6-dcr {
         margin-top: 100px;
@@ -735,6 +901,7 @@ h2 {
         width: 420px;
         margin-left: 0px;
     }
+
     .sec7-head h2 {
         text-transform: capitalize;
         font-weight: 700;
@@ -743,9 +910,9 @@ h2 {
         padding: 50px;
         text-align: center;
         margin-top: 0px;
-    }    
+    }
 
-    .sec7-img img { 
+    .sec7-img img {
         display: none;
     }
 
@@ -874,7 +1041,7 @@ h2 {
         top: -435px;
         left: 0px;
         width: 100%;
-        
+
     }
 
     .sec5-pizza img {
@@ -982,12 +1149,14 @@ h2 {
     .container {
         width: 750px;
     }
+
     .background {
         background: url(../image/Header\ Backgroundhome.png);
         height: 1265px;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .col-50 {
         width: 100%;
     }
@@ -999,17 +1168,18 @@ h2 {
     .col-33 {
         width: 50%;
     }
-    
+
     .sec4-img img {
         width: 80%;
         margin: 30px;
-    }    
+    }
 
     .logo img {
         position: absolute;
         top: 85px;
         left: 575px;
     }
+
     .img2 {
         top: 350px;
         left: 120px;
@@ -1025,6 +1195,7 @@ h2 {
         width: 530px;
         text-align: justify;
     }
+
     .sec5-dcr {
         color: #f8f6f1;
         text-transform: capitalize;
@@ -1034,6 +1205,7 @@ h2 {
         width: 600px;
         margin-left: 90px;
     }
+
     .sec5-head h2 {
         font-size: 30px;
         color: #f8f6f1;
@@ -1043,12 +1215,14 @@ h2 {
         width: 400px;
         margin-left: 165px;
     }
+
     .sec5-backg {
         background: url(../image/Header\ Backgroundhome.png);
         height: 925px;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .sec5-img img {
         position: absolute;
         top: -340px;
@@ -1089,6 +1263,7 @@ h2 {
         transition: .5s ease;
         cursor: pointer;
     }
+
     .sec7-img img {
         position: absolute;
         width: 100%;
@@ -1163,6 +1338,7 @@ h2 {
         text-align: center;
         margin: 30px;
     }
+
     .sec5-backg {
         background: url(../image/Header\ Backgroundhome.png);
         height: 895px;
@@ -1192,6 +1368,7 @@ h2 {
         left: 35px;
         width: 40%;
     }
+
     .sec5-head h2 {
         font-size: 40px;
         color: #f8f6f1;
@@ -1202,6 +1379,7 @@ h2 {
         margin-left: 165px;
         line-height: 60px;
     }
+
     .sec7-img img {
         position: absolute;
         width: 90%;
@@ -1209,6 +1387,7 @@ h2 {
         left: 45px;
         top: -25px;
     }
+
     .serch input {
         width: 500px;
         height: 40px;
@@ -1216,6 +1395,7 @@ h2 {
         padding: 20px;
         margin: 45px;
     }
+
     .serch button {
         width: 135px;
         height: 42px;
@@ -1246,7 +1426,7 @@ h2 {
         margin-left: 220px;
     }
 
-    
+
 }
 
 @media (min-width:1400px) {
@@ -1265,27 +1445,32 @@ h2 {
     .col-50 {
         width: 50%;
     }
+
     .background {
         background: url(../image/Header\ Backgroundhome.png);
         height: 710px;
     }
+
     .img1 {
         width: 450px;
         height: 450px;
         left: 50px;
     }
+
     .img2 {
         top: 400px;
         left: 145px;
         width: 400px;
         height: 300px;
     }
+
     .img3 {
         top: 400px;
         left: -60px;
         width: 200px;
         height: 200px;
     }
+
     .sec5-head h2 {
         font-size: 45px;
         color: #f8f6f1;
@@ -1319,6 +1504,7 @@ h2 {
         text-align: center;
         margin: 30px;
     }
+
     .sec5-dcr {
         color: #f8f6f1;
         text-transform: capitalize;
