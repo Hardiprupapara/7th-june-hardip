@@ -27,7 +27,6 @@
 .justify {
     justify-content: space-between;
     /* position: sticky;
-    position: -webkit-sticky;
     top: 0; */
 
 }
@@ -45,9 +44,11 @@
     width: 33%;
 }
 
+
 .menu a:hover {
-    border-bottom: 2px solid #799be6;
+    border-bottom: 2px solid red;
     transition: all.2s ease
+
 }
 
 button a {
@@ -120,7 +121,7 @@ input {
 
 .head-txt button a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 19px;
     text-transform: capitalize;
 
@@ -132,7 +133,7 @@ input {
     padding: 12px;
     width: 190px;
     cursor: pointer;
-    background-color: #c7c3ceac;
+    background-color: white;
     color: white;
     transition: .5s ease;
     border-radius: 38px;
@@ -210,11 +211,34 @@ button:hover {
     padding: 100px;
 }
 
+.sec-btn {
+    text-align: center;
+}
+
+.sec-btn button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    transition: .5s ease;
+    border-radius: 38px;
+    margin-bottom: 40px;
+
+}
+
+.sec-btn a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
 .sec2-btn button {
     width: 275px;
     height: 60px;
     border-radius: 38px;
-    background-color: #343434;
+    background-color: black;
 
 }
 
@@ -272,7 +296,7 @@ button:hover {
     width: 275px;
     height: 60px;
     border-radius: 38px;
-    background-color: #27292c;
+    background-color: black;
     text-align: center;
 
 }
@@ -426,7 +450,7 @@ button:hover {
     width: 200px;
     height: 42px;
     border-radius: 20px;
-    background-color: #343434;
+    background-color: black;
     position: absolute;
     left: 808px;
     top: 100px;
@@ -435,7 +459,7 @@ button:hover {
 
 }
 
-.search button:hover {
+.serch button:hover {
     background: transparent;
 
 }
@@ -499,10 +523,16 @@ button:hover {
 }
 
 
-.about1 ul li a {
+.about ul li a {
     text-decoration: none;
     color: #343434;
     font-size: 20px;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+.about ul li a:hover{
+padding-left: 8px;
+
 }
 
 .other ul li {
@@ -528,158 +558,6 @@ button:hover {
 h2 {
     color: #343434;
     text-transform: capitalize;
-}
-
-@media(min-width:320px) {
-    .container {
-        width: 310px;
-
-    }
-
-    .col-50 {
-        width: 100%;
-    }
-
-    .col-33 {
-        width: 100%;
-    }
-
-    .col-25 {
-        width: 100%;
-    }
-    .menu ul li a {
-        padding: 0px;
-    }
-    .logo img {
-        top: 145px;
-        left: 15px;
-        width: 100px;
-    }
-    .head-txt {
-        padding: 0px;
-    }
-
-    .head-txt h1 {
-        font-family: reey;
-        font-weight: 600;
-        font-size: 39px;
-        width: 155px;
-        color: #fff;
-        text-transform: capitalize;
-    }
-
-    .head-txt p {
-        color: #fff;
-        text-align: justify;
-        width: 151px;
-        margin-top: 50px;
-    }
-
-    .img1 {
-        width: 100px;
-        height: 500px;
-    }
-
-    .img2 {
-        top: 370px;
-        left: 75px;
-        width: 100px;
-        height: 400px;
-    }
-
-    .sec2-img img {
-        width: 80%;
-    }
-
-    .sec2-btn button {
-        width: 100px;
-        height: 60px;
-    }
-    .sec3-txt {
-        padding: 50px;
-        margin-left: 0px;
-        color: #fff;
-        width: 314px;
-        text-align: justify;
-    }
-    .sec4-img img {
-        width: 100px;
-        margin: 40px;
-    }
-    .sec4-txt h2 {
-        font-size: 58px;
-        color: #27292c;
-        font-weight: 700;
-        font-family: "Open Sans";
-        width: 100px;
-        margin: 80px;
-    }
-    .sec4-txt p {
-        width: 198px;
-        height: 175px;
-        font-size: 29px;
-        color: #27292c;
-        font-weight: 400;
-        font-family: "Open Sans";
-        text-align: justify;
-        margin: 0 80px;
-    }
-    .sec5-img img {
-    
-        display: none;
-    }
-    .sec5-head h2 {
-        font-size: 37px;}
-        .sec5-pizza img {
-            top: 50px;
-            left: 445px;
-            position: absolute;
-            display: none;
-        }
-        .sec5-pizzapis img {
-            position: absolute;
-            top: 470px;
-            left: 345px;
-            display: none;
-        }
-        .sec6-dcr {
-            margin-top: 200px;
-            text-align: center;
-            font-size: 19px;
-            width: 100px;
-            margin-left: 0px;
-        }
-        .sec7-img img {
-            position: absolute;
-            width: 1200px;
-            height: 700px;
-            left: 95px;
-            top: -60px;
-            display: none;
-        }
-        .serch input {
-            width: 100px;
-            height: 40px;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 100px;
-        }
-        .serch button {
-            width: 200px;
-            height: 42px;
-            border-radius: 20px;
-            background-color: #343434;
-            position: absolute;
-            left: 100px;
-            top: 100px;
-            transition: .5s ease;
-            cursor: pointer;
-        }
-        .titlehere p {
-            width: 323px;
-            text-align: justify;
-            font-size: 20px;
-        }
 }
 
 @media(min-width:425px) {
@@ -845,10 +723,10 @@ h2 {
     }
 
     .sec5-img img {
-        /* position: absolute;
+        position: absolute;
         top: -340px;
         left: 0px;
-        width: 105%; */
+        width: 105%;
         display: none;
     }
 
@@ -876,7 +754,7 @@ h2 {
         width: 150px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 268px;
         top: 100px;
@@ -1040,6 +918,7 @@ h2 {
         position: absolute;
         top: -435px;
         left: 0px;
+        display: block;
         width: 100%;
 
     }
@@ -1049,6 +928,7 @@ h2 {
         left: 20px;
         position: absolute;
         width: 100%;
+        
     }
 
     .sec5-pizzapis img {
@@ -1133,7 +1013,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 335px;
         top: 46px;
@@ -1256,7 +1136,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 440px;
         top: 46px;
@@ -1334,7 +1214,7 @@ h2 {
         width: 275px;
         height: 60px;
         border-radius: 38px;
-        background-color: rgb(39, 41, 44);
+        background-color: black;
         text-align: center;
         margin: 30px;
     }
@@ -1400,7 +1280,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 603px;
         top: 46px;
@@ -1500,7 +1380,7 @@ h2 {
         width: 275px;
         height: 60px;
         border-radius: 38px;
-        background-color: rgb(39, 41, 44);
+        background-color: black;
         text-align: center;
         margin: 30px;
     }
@@ -1556,7 +1436,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 855px;
         top: 46px;
