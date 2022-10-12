@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.col-33 {
+    width: 33.33%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.m-lf-o {
+    margin-left: auto;
+}
+
+.main-menu ul li {
+    /* list-style: none; */
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+.main-menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: 0.5s ease-in-out;
+    margin-top: 4px;
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
+}
+
+.whatshapp:hover {
+    transition: 0.5s ease-out;
+    color: rgb(8, 129, 8);
+}
+
+.instagram:hover {
+    transition: 0.5s ease-out;
+    color: rgb(200, 41, 102);
+}
+
+.facebook:hover {
+    transition: 0.5s ease-out;
+    color: rgb(63, 63, 211);
+}
+
+.twitter:hover {
+    transition: 0.5s ease-out;
+    color: rgb(36, 167, 219);
+}
+
+
+.main-menu a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+header {
+    background-color: #000;
+}
+
+.social-icon ul li {
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.social-icon a {
+    color: white;
+}
+
+.h1-txt {
+
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.h-txt img {
+    margin: auto;
+    display: block;
+}
+
+.h1-txt p {
+    color: green;
+}
+
+
+.h1-txt h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    color: green;
+}
+
+.typing {
+    color: green;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.backg {
+    background: url(../photos/lasptop.jpg);
+    /* width: 100%; */
+    background-size: cover;
+    /* height: 100vh ; */
+    background-attachment: fixed;
+}
