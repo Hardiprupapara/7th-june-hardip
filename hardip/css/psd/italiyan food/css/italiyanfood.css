@@ -27,7 +27,6 @@
 .justify {
     justify-content: space-between;
     /* position: sticky;
-    position: -webkit-sticky;
     top: 0; */
 
 }
@@ -45,9 +44,17 @@
     width: 33%;
 }
 
+<<<<<<< HEAD
 .menu a:hover {
     border-bottom: 2px solid #799be6;
     transition: all.2s ease
+=======
+
+.menu a:hover {
+    border-bottom: 2px solid red;
+    transition: all.2s ease
+
+>>>>>>> 4c8e99c579b6389b01b0fb9f4a9eb4100b4cfa1b
 }
 
 button a {
@@ -120,7 +127,7 @@ input {
 
 .head-txt button a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 19px;
     text-transform: capitalize;
 
@@ -132,7 +139,7 @@ input {
     padding: 12px;
     width: 190px;
     cursor: pointer;
-    background-color: #c7c3ceac;
+    background-color: white;
     color: white;
     transition: .5s ease;
     border-radius: 38px;
@@ -210,11 +217,34 @@ button:hover {
     padding: 100px;
 }
 
+.sec-btn {
+    text-align: center;
+}
+
+.sec-btn button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    transition: .5s ease;
+    border-radius: 38px;
+    margin-bottom: 40px;
+
+}
+
+.sec-btn a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
 .sec2-btn button {
     width: 275px;
     height: 60px;
     border-radius: 38px;
-    background-color: #343434;
+    background-color: black;
 
 }
 
@@ -272,7 +302,7 @@ button:hover {
     width: 275px;
     height: 60px;
     border-radius: 38px;
-    background-color: #27292c;
+    background-color: black;
     text-align: center;
 
 }
@@ -426,7 +456,7 @@ button:hover {
     width: 200px;
     height: 42px;
     border-radius: 20px;
-    background-color: #343434;
+    background-color: black;
     position: absolute;
     left: 808px;
     top: 100px;
@@ -435,7 +465,7 @@ button:hover {
 
 }
 
-.search button:hover {
+.serch button:hover {
     background: transparent;
 
 }
@@ -499,10 +529,16 @@ button:hover {
 }
 
 
-.about1 ul li a {
+.about ul li a {
     text-decoration: none;
     color: #343434;
     font-size: 20px;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+.about ul li a:hover{
+padding-left: 8px;
+
 }
 
 .other ul li {
@@ -845,10 +881,10 @@ h2 {
     }
 
     .sec5-img img {
-        /* position: absolute;
+        position: absolute;
         top: -340px;
         left: 0px;
-        width: 105%; */
+        width: 105%;
         display: none;
     }
 
@@ -876,7 +912,7 @@ h2 {
         width: 150px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 268px;
         top: 100px;
@@ -1040,6 +1076,7 @@ h2 {
         position: absolute;
         top: -435px;
         left: 0px;
+        display: block;
         width: 100%;
 
     }
@@ -1049,6 +1086,7 @@ h2 {
         left: 20px;
         position: absolute;
         width: 100%;
+        
     }
 
     .sec5-pizzapis img {
@@ -1133,7 +1171,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 335px;
         top: 46px;
@@ -1256,7 +1294,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 440px;
         top: 46px;
@@ -1334,7 +1372,7 @@ h2 {
         width: 275px;
         height: 60px;
         border-radius: 38px;
-        background-color: rgb(39, 41, 44);
+        background-color: black;
         text-align: center;
         margin: 30px;
     }
@@ -1400,7 +1438,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 603px;
         top: 46px;
@@ -1500,7 +1538,7 @@ h2 {
         width: 275px;
         height: 60px;
         border-radius: 38px;
-        background-color: rgb(39, 41, 44);
+        background-color: black;
         text-align: center;
         margin: 30px;
     }
@@ -1556,7 +1594,7 @@ h2 {
         width: 135px;
         height: 42px;
         border-radius: 20px;
-        background-color: #343434;
+        background-color: black;
         position: absolute;
         left: 855px;
         top: 46px;
