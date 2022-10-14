@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+
+
+.posi-rel {
+    position: relative;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-33 {
+    width: 33%;
+}
+
+.nav-backg {
+    background-color: #537543;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+
+}
+
+.g-back {
+    background-image: linear-gradient(262deg, #7cb258 0%, #537543 100%);
+    /* height: 700px; */
+
+}
+
+@font-face {
+    font-family: Berkshire Swash;
+    src: url(../font/BerkshireSwash-Regular.ttf);
+}
+
+/* .g-back img {
+    width: 50%;
+    
+}
+
+.sec-back-dsi {
+    width: 100%;
+    
+} */
+.sec-head {
+
+    margin: 0 40px;
+    color: white;
+    margin: 100px 0;
+    padding: 25px 0;
+
+}
+
+.sec-head h2 {
+    font-size: 62px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+
+    filter: drop-shadow(10px 17.321px 10.5px rgba(0, 0, 0, 0.05));
+}
+
+.sec-head span {
+    font-size: 25px;
+    margin-left: 45px;
+    letter-spacing: -1px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    filter: drop-shadow(10px 17.321px 10.5px rgba(0, 0, 0, 0.05));
+}
+
+.sec-head p {
+    font-size: 25px;
+    line-height: 41px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    width: 400px;
+
+    padding: 70px 0;
+}
+
+.btn button {
+    padding: 10px 30px;
+    border-radius: 18px;
+    background-color: #e6ca48;
+    border: none;
+
+}
+
+.btn a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #3e5831;
+}
+
+.btn-read button {
+    padding: 10px 30px;
+    border-radius: 18px;
+    background-color: white;
+    border: none;
+
+}
+
+.btn-read a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #3e5831;
+}
+
+
+.div {
+    padding: 50px;
+}
+
+.dis-1 {
+    right: 140px;
+    top: 50px;
+}
+
+.dis2 {
+    left: 45px;
+    top: 205px;
+}
+
+.dis3 {
+    right: 45px;
+    top: 281px;
+}
+
+.dis4 {
+    top: 315px;
+    left: 95px;
+}
+
+.g-back-liner {
+    padding: 40px 0;
+
+    background-image: linear-gradient(262deg, #7cb258 0%, #537543 100%);
+}
+
+.sec2-img {
+    text-align: end;
+}
+
+.sec2-img img {
+    width: 80%;
+    margin: -1px 0 -5px 0;
+}
+
+.sec2-head {
+    margin: 40px;
+}
+
+.sec2-head h2 {
+    font-size: 60px;
+    line-height: 69px;
+    color: #537543;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    text-transform: capitalize;
+}
+
+.sec2-head span {
+    font-size: 20px;
+    line-height: 69px;
+    color: #537543;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+
+.sec2-head p {
+    font-size: 20px;
+    width: 500px;
+    color: #537543;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+
+
+.linear {
+    background: linear-gradient(90deg, transparent 30%, #e6ca48 30%);
+
+}

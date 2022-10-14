@@ -36,7 +36,7 @@
 }
 
 .col-50 {
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -44,17 +44,14 @@
     width: 33%;
 }
 
-<<<<<<< HEAD
 .menu a:hover {
     border-bottom: 2px solid #799be6;
     transition: all.2s ease
-=======
+}
 
 .menu a:hover {
     border-bottom: 2px solid red;
     transition: all.2s ease
-
->>>>>>> 4c8e99c579b6389b01b0fb9f4a9eb4100b4cfa1b
 }
 
 button a {
@@ -78,7 +75,7 @@ button a {
 .input-icon i {
     position: absolute;
     line-height: 30px;
-    margin-left: 75px;
+    margin-left: -25px;
 
 
 }
@@ -241,7 +238,7 @@ button:hover {
 }
 
 .sec2-btn button {
-    width: 275px;
+    width: 190px;
     height: 60px;
     border-radius: 38px;
     background-color: black;
@@ -356,7 +353,7 @@ button:hover {
     position: absolute;
     top: -415px;
     left: 65px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .sec5-pizza {
@@ -365,8 +362,9 @@ button:hover {
 
 .sec5-pizza img {
     top: 50px;
-    left: 445px;
+    /* left: 445px; */
     position: absolute;
+    width: 100%;
 
 }
 
@@ -536,8 +534,9 @@ button:hover {
     transition: all .2s ease-in-out;
     display: block;
 }
-.about ul li a:hover{
-padding-left: 8px;
+
+.about ul li a:hover {
+    padding-left: 8px;
 
 }
 
@@ -583,14 +582,17 @@ h2 {
     .col-25 {
         width: 100%;
     }
+
     .menu ul li a {
         padding: 0px;
     }
+
     .logo img {
         top: 145px;
         left: 15px;
         width: 100px;
     }
+
     .head-txt {
         padding: 0px;
     }
@@ -628,9 +630,10 @@ h2 {
     }
 
     .sec2-btn button {
-        width: 100px;
+        width: 190px;
         height: 60px;
     }
+
     .sec3-txt {
         padding: 50px;
         margin-left: 0px;
@@ -638,10 +641,12 @@ h2 {
         width: 314px;
         text-align: justify;
     }
+
     .sec4-img img {
         width: 100px;
         margin: 40px;
     }
+
     .sec4-txt h2 {
         font-size: 58px;
         color: #27292c;
@@ -650,6 +655,7 @@ h2 {
         width: 100px;
         margin: 80px;
     }
+
     .sec4-txt p {
         width: 198px;
         height: 175px;
@@ -660,63 +666,73 @@ h2 {
         text-align: justify;
         margin: 0 80px;
     }
+
     .sec5-img img {
-    
         display: none;
     }
+
     .sec5-head h2 {
-        font-size: 37px;}
-        .sec5-pizza img {
-            top: 50px;
-            left: 445px;
-            position: absolute;
-            display: none;
-        }
-        .sec5-pizzapis img {
-            position: absolute;
-            top: 470px;
-            left: 345px;
-            display: none;
-        }
-        .sec6-dcr {
-            margin-top: 200px;
-            text-align: center;
-            font-size: 19px;
-            width: 100px;
-            margin-left: 0px;
-        }
-        .sec7-img img {
-            position: absolute;
-            width: 1200px;
-            height: 700px;
-            left: 95px;
-            top: -60px;
-            display: none;
-        }
-        .serch input {
-            width: 100px;
-            height: 40px;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 100px;
-        }
-        .serch button {
-            width: 200px;
-            height: 42px;
-            border-radius: 20px;
-            background-color: #343434;
-            position: absolute;
-            left: 100px;
-            top: 100px;
-            transition: .5s ease;
-            cursor: pointer;
-        }
-        .titlehere p {
-            width: 323px;
-            text-align: justify;
-            font-size: 20px;
-        }
+        font-size: 37px;
+    }
+
+    .sec5-pizza img {
+        top: 50px;
+        left: 445px;
+        position: absolute;
+        /* display: none; */
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 470px;
+        left: 345px;
+        /* display: none; */
+    }
+
+    .sec6-dcr {
+        margin-top: 200px;
+        text-align: center;
+        font-size: 19px;
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .sec7-img img {
+        position: absolute;
+        width: 1200px;
+        height: 700px;
+        left: 95px;
+        top: -60px;
+        display: none;
+    }
+
+    .serch input {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .serch button {
+        width: 200px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: #343434;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .titlehere p {
+        width: 323px;
+        text-align: justify;
+        font-size: 20px;
+    }
 }
+
 
 @media(min-width:425px) {
     .container {
@@ -898,7 +914,7 @@ h2 {
     }
 
     .sec6-head p {
-        /* width: 409px; */
+
         padding: 0px 40px;
         text-align: justify;
         font-size: 24px;
@@ -1078,6 +1094,7 @@ h2 {
         left: 0px;
         display: block;
         width: 100%;
+        display: none;
 
     }
 
@@ -1086,7 +1103,7 @@ h2 {
         left: 20px;
         position: absolute;
         width: 100%;
-        
+
     }
 
     .sec5-pizzapis img {
@@ -1266,6 +1283,7 @@ h2 {
         top: -340px;
         left: 0px;
         width: 100%;
+        display: block;
     }
 
     .sec5-pizza img {

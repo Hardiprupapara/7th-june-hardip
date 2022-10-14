@@ -32,14 +32,31 @@ header {
 
 .main-menu ul li {
     list-style: none;
-    display: inline;
+    display: inline-block;
+    padding: 20px;
+
 }
 
 .main-menu ul li a {
     color: white;
     text-decoration: none;
-    padding: 20px;
     text-transform: capitalize;
+}
+
+.main-menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    transition: 0.5s ease;
+
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
 }
 
 .main-menu {
@@ -114,6 +131,11 @@ header {
 .red-btn button {
     padding: 10px 25px;
     background-color: rgb(255, 55, 0);
+}
+
+.red-btn:hover {
+    cursor: pointer;
+    box-shadow: 2px;
 }
 
 .red-btn button a {
