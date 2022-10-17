@@ -6,8 +6,8 @@
 }
 
 .container {
-    /* width: 1300px; */
-    width: 100%;
+    width: 1300px;
+    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -362,6 +362,11 @@
     left: -295px;
 }
 
+
+.overflow {
+    overflow: hidden;
+}
+
 .str-dsi2 img {
     width: 25%;
     right: -295px;
@@ -397,7 +402,6 @@
 }
 
 .sec5-txt h2 {
-    /* text-align: right; */
     font-size: 37px;
     line-height: 50px;
     color: #ffffff;
@@ -498,6 +502,10 @@
 .sec7-dsi img {
     width: 100%;
 }
+
+/* .sec8-menu img {
+    width: 100%;
+} */
 
 .sec8-mlist {
     padding: 70px;
