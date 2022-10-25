@@ -6,12 +6,21 @@
 }
 
 .container {
-    width: 1400px;
+    width: 100%;
+    /* width: 1400px; */
     margin: 0 auto;
 }
 
+
+
+
 .row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.col-50 {
+    width: 100%;
 }
 
 header {
@@ -88,9 +97,7 @@ header {
     margin: 0 auto;
 }
 
-.col-50 {
-    width: 50%;
-}
+
 
 .home-txt h2 {
     color: white;
@@ -177,7 +184,7 @@ header {
 .sec2-head p {
     color: white;
     font-size: 17px;
-    width: 535px;
+    width: 345px;
     padding: 50px 0;
 }
 
@@ -261,18 +268,17 @@ header {
 }
 
 .paper2 {
-    width: 70%;
-    top: 390px;
+    width: 80%;
+    top: 354px;
     left: 78px;
-
 }
 
 .paper1 {
-    width: 60%;
+    width: 70%;
     left: 100px;
-    top: 105px;
-
+    top: 40px;
 }
+
 
 .sec4-head {
     margin: 150px 0 300px;
@@ -307,8 +313,8 @@ header {
 }
 
 .or-tap3 {
-    left: 206px;
-    top: 460px;
+    left: 222px;
+    top: 436px;
 }
 
 .sec5-head h2 {
@@ -332,8 +338,12 @@ header {
 
 }
 
+.sec5-img img {
+    width: 90%;
+}
+
 .sec5-img {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     margin: 100px 0;
 }
@@ -370,16 +380,20 @@ header {
 }
 
 .sec6-img1 {
-    width: 100%;
     text-align: right;
-}
-
-.sec6-img {
-    width: 100%;
     text-align: center;
 }
 
+.sec6-img {
+    text-align: center;
+
+}
+
 .sec6-img img {
+    width: 100%;
+}
+
+.sec6-img1 img {
     width: 81%;
 }
 
@@ -484,16 +498,16 @@ input {
 }
 
 .email {
-    padding: 5px 135px;
+    padding: 5px 128px;
 }
 
 .psw {
-    padding: 5px 135px;
+    padding: 5px 128px;
 
 }
 
 .msg {
-    padding: 30px 135px;
+    padding: 30px 128px;
 }
 
 label {
@@ -549,7 +563,7 @@ label {
 }
 
 .col input {
-    padding: 5px 20px;
+    padding: 5px 16px;
 }
 
 .col li {

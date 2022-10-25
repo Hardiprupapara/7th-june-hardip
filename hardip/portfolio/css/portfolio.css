@@ -19,7 +19,7 @@
 }
 
 .col-33 {
-    width: 33.33%;
+    width: 30%;
 }
 
 .col-50 {
@@ -121,9 +121,87 @@ header {
 }
 
 .backg {
-    background: url(../photos/lasptop.jpg);
-    /* width: 100%; */
+    /* background: url(../photos/lasptop.jpg); */
+    background-color: #000;
     background-size: cover;
-    /* height: 100vh ; */
     background-attachment: fixed;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase video {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+.title {
+    /* width: 100%; */
+    height: 50%;
+    background-color: #000;
+    font-size: 100px;
+    color: white;
+    mix-blend-mode: multiply;
+}
+
+h1 {
+    padding-top: 100px;
+
+}
+
+.discrip {
+    width: 1400px;
+    height: 40%;
+    background-color: #000;
+    font-size: 50px;
+    color: white;
+    mix-blend-mode: multiply;
+}
+
+.about h2::first-letter {
+    color: red;
+}
+
+.about h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.edu h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+
+.col-70 {
+    width: 70%;
+}
+
+.edu {
+    padding: 25px;
+}
+
+.edu-dt {
+    padding: 25px;
+}
+
+.edu p {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.edu-dt p {
+    text-transform: capitalize;
+    font-weight: 700;
+
 }

@@ -6,8 +6,8 @@
 }
 
 .container {
-    width: 1300px;
-    /* width: 100%; */
+    /* width: 1300px; */
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -34,16 +34,20 @@
     position: relative;
 }
 
-.col-50 {
+.col-5 {
     width: 50%;
 }
 
+.col-50 {
+    width: 100%;
+}
+
 .col-33 {
-    width: 33%;
+    width: 100%;
 }
 
 .col-25 {
-    width: 25%;
+    width: 100%;
 }
 
 .nav-backg {
@@ -421,7 +425,8 @@
 
 .sec6-head h2 {
     padding: 15px;
-    font-size: 98px;
+    font-size: 60px;
+    width: 100%;
     line-height: 105px;
     color: #ffffff;
     font-weight: 700;
@@ -474,7 +479,7 @@
 }
 
 .sec7-head span {
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px;
     font-size: 17px;
@@ -503,13 +508,13 @@
     width: 100%;
 }
 
-/* .sec8-menu img {
-    width: 100%;
-} */
 
 .sec8-mlist {
-    padding: 70px;
+    padding: 71px;
 }
+
+
+
 
 .sec8-mlist h2 {
     font-size: 35px;
@@ -532,11 +537,11 @@
 
 .sec9-head h2 {
     padding: 15px 0;
-    font-size: 103px;
+    font-size: 60px;
     color: #68914f;
     font-weight: 700;
     font-family: "Berkshire Swash";
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -551,14 +556,15 @@
 }
 
 .email {
-    width: 600px;
+    width: 100%;
+    /* width: 600px; */
     margin: 0 auto;
 }
 
 .email input {
     padding: 10px 20px;
     border-color: #537543;
-    width: 600px;
+    width: 100%;
     border-radius: 18px;
     font-size: 20px;
     font-weight: 600;
@@ -567,7 +573,8 @@
 
 .subscribe {
 
-    width: 600px;
+    width: 100%;
+    /* width: 500px; */
     margin: 0 auto;
     padding: 30px 0;
     margin-bottom: 50px;
@@ -575,7 +582,8 @@
 
 .subscribe button {
     padding: 5px 0;
-    width: 600px;
+    width: 100%;
+    /* width: 600px; */
     border-radius: 18px;
     border: hidden;
     background-color: #537543;

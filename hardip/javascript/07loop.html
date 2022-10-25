@@ -11,7 +11,7 @@
 <body>
     <script>
         // for (let index = 0; index < 10; index++) {
-        //     for (let j = 0; j <= index; j++) {
+        //     for (let j = 0; j <= index; j++) {                
         //         // console.log("*");
         //         document.write(" * ")
         //     }
@@ -20,23 +20,28 @@
         whiledata = 0
         while (whiledata < 10) {
             console.log(whiledata);
-            whiledata++
+            whiledata++;
         }
-        dowhiledata = 50
+
+
+
+        dowhiledata = 10
         do {
             console.log(dowhiledata);
         } while (dowhiledata < 10);
 
+
+
         // for array access
-        array = [121, 54, 54, 45]
+        array = [121, 54, 53, 45]
         array.forEach(element => {
             console.log(element);
         });
-        for (const key in array) {
+        // for (const key in array) {
 
-            console.log(key);
-            console.log(array[key]);
-        }
+        //     console.log(key);
+        //     console.log(array[key]);
+        // }
         for (const iterator of array) {
             console.log(iterator);
 
