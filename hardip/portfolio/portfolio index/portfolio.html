@@ -21,19 +21,19 @@
                 <div class="main-menu">
                     <ul>
                         <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#about">about</a></li>
+                        <!-- <li><a href="#">portfolio</a></li> -->
+                        <li><a href="#cont">contact</a></li>
                     </ul>
                 </div>
                 <div class="social-icon m-lf-o">
                     <ul>
-                        <li><a href="https://wa.me/+919106600659"><i
+                        <li><a href="https://wa.me/+919106600659" target="_blank"><i
                                     class="fa-brands fa-2x fa-whatsapp whatshapp"></i></a></li>
-                        <li> <a href="https://www.instagram.com/__itz__hardip_rupapara/"><i
+                        <li> <a href="https://www.instagram.com/__itz__hardip_rupapara/" target="_blank"><i
                                     class="fa-brands fa-2x fa-instagram instagram"></i></a></li>
-                        <li> <a href="#"><i class="fa-brands fa-2x fa-facebook-f facebook"></i></a></li>
-                        <li> <a href="#"><i class="fa-brands fa-2x fa-twitter twitter"></i></a></li>
+                        <li> <a href="#" target="_blank"><i class="fa-brands fa-2x fa-facebook-f facebook"></i></a></li>
+                        <li> <a href="#" target="_blank"><i class="fa-brands fa-2x fa-twitter twitter"></i></a></li>
                     </ul>
                 </div>
 
@@ -50,7 +50,6 @@
                             <h1 class="title">HARDIP <br>
                                 RUPAPARA</h1>
                             <p class="discrip dis">
-                                <!-- frontend devloper -->
                             </p>
                         </div>
 
@@ -64,7 +63,7 @@
     </section>
     <section>
         <div class="container">
-            <div class="about">
+            <div class="about" id="about">
                 <h2>about</h2>
             </div>
 
@@ -87,21 +86,48 @@
                     <div class="edu-dt">
 
                         <p>maharaja sayajirav gaykvad univercity of vadodara</p>
-                        <span>events</span>
+                        <span>events </span>
                     </div>
                     <div class="edu-dt">
                         <p>front end development</p>
                     </div>
                 </div>
             </div>
-
+            <div class="edu">
+                <h2>skills</h2>
+            </div>
+            <div class="s-rang">
+                <label for="#">html</label>
+                <input type="range">
+                <label for="#">css</label>
+                <input type="range">
+                <label for="#">javascript</label>
+                <input type="range">
+                <label for="#">react js</label>
+                <input type="range">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="backg">
+            <div class="container ">
+                <div class="cont" id="cont">
+                    <h2>contact</h2>
+                </div>
+                <div class="c-dtaile">
+                    <ul>
+                        <li>number:9106600659</li>
+                        <li>email: hardiprupapara87079@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <script>
         $(document).ready(function () {
             // typing text animation script
             var typed = new Typed(".discrip", {
-                strings: ["back", "Front end developer"],
+                strings: ["back", "Front end developer", "back end developer"],
                 typeSpeed: 100,
                 backSpeed: 60,
                 loop: true

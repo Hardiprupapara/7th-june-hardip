@@ -9,6 +9,7 @@
     <style>
         .slider img {
             width: 100%;
+            /* position: absolute; */
         }
 
         .slider {
@@ -30,8 +31,49 @@
     </div>
     <script>
         let slider_data = document.getElementsByClassName("slider-img")
-        console.log("slider_data");
+        let count = 0
+        console.log(slider_data);
+        function slider() {
+
+            for (let index = 0; index < slider_data.length; index++) {
+                console.log(slider_data[index]);
+                slider_data[index].style.display = "none"
+
+            }
+            console.log("called");
+
+            slider_data[count].style.display = "block"
+            count++
+            setTimeout(slider, 3000)
+        }
+        slider();
+
     </script>
+
+
+
+
+
+
+    <!-- <script>
+        let SliderImageData
+            = document.getElementsByC1assName("slider-img");
+        let count = 0
+        console.log(SliderImageData);
+        function Slider() {
+            for (let index = 0; index < SliderImageData.length; index++) {
+                console.log(SliderImageData[index])
+                SliderImageData[index].style.display = "none"
+            }
+
+
+            console - log("called");
+            SliderImageData[count].style.display = "block"
+            count++
+            setTimeout(Slider, 3000);
+        }
+        Slider();
+    </script> -->
 </body>
 
 </html>
