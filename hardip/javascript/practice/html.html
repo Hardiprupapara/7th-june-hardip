@@ -15,39 +15,43 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>User Name</td>
-            <td>
-                <input type="text" onblur="checkreq()" name="username" id="username" required> <span
-                    id="usernameError">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td>password</td>
-            <td>
-                <input type="password" onblur="checkreq()" name="password" id="password" required> <span
-                    id="passwordError">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td>email</td>
-            <td>
-                <input type="email" onkeyup="checkemail(this)" onblur="checkreq()" name="email" id="email" required>
-                <span id="emailError">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td>mobile</td>
-            <td>
-                <input type="tel" onblur="checkreq()" name="mobile" id="mobile" required>
-                <span id="numbedEror">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="save" name="save"></td>
-        </tr>
-    </table>
+    <form action="" method="get">
+
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" onblur="checkreq()" name="username" id="username" required> <span
+                        id="usernameError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>
+                    <input type="password" onblur="checkreq()" name="password" id="password" required> <span
+                        id="passwordError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>
+                    <input type="email" onkeyup="checkemail(this)" onblur="checkreq()" name="email" id="email" required>
+                    <span id="emailError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td>
+                    <input type="tel" onblur="checkreq()" name="mobile" id="mobile" required>
+                    <span id="numbedEror">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="save" name="save"></td>
+            </tr>
+        </table>
+    </form>
+
 
 
     <script>

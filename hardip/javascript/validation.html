@@ -45,12 +45,13 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit" value="save" name="save"></td>
+            <td><input onclick="checkreq()" type="submit" value="save" name="save" id="save"></td>
         </tr>
     </table>
 
 
     <script>
+
         function checkemail(something) {
             // console.log(something);
             RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -62,6 +63,7 @@
 
             }
         }
+
         function checkreq() {
             let username = document.getElementById("username").value;
             console.log(username);
@@ -72,25 +74,37 @@
                 document.getElementById("usernameError").innerHTML = ""
 
             }
-            let password = document.getElementById("password").value;
-            console.log(password);
-            if (password == "") {
-                // console.log("this fild is required");
-                document.getElementById("passwordError").innerHTML = "<b>this fild is requird</b>"
-            } else {
-                document.getElementById("passwordError").innerHTML = ""
+            function checkreq() {
+                let password = document.getElementById("password").value;
+                console.log(password);
+                if (password == "") {
+                    // console.log("this fild is required");
+                    document.getElementById("passwordError").innerHTML = "<b>this fild is requird</b>"
+                } else {
+                    document.getElementById("passwordError").innerHTML = ""
+
+                }
 
             }
-            let mobile = document.getElementById("mobile").value;
-            console.log(mobile);
-            if (mobile == "") {
-                // console.log("this fild is required");
-                document.getElementById("numbedEror").innerHTML = "<b>this fild is requird</b>"
-            } else {
-                document.getElementById("numbedEror").innerHTML = ""
+            function checkreq() {
+                let mobile = document.getElementById("mobile").value;
+                console.log(mobile);
+                if (mobile == "") {
+                    // console.log("this fild is required");
+                    document.getElementById("numbedEror").innerHTML = "<b>this fild is requird</b>"
+                } else {
+                    document.getElementById("numbedEror").innerHTML = ""
+
+                }
 
             }
+
         }
+        // function checkreq() {
+        //     let element = document.getElementById("save");
+        //     element.classList.remove("usernameError");
+        // }
+
 
     </script>
 </body>
