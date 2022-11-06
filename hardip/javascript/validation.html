@@ -15,39 +15,46 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>User Name</td>
-            <td>
-                <input type="text" onblur="checkreq()" name="username" id="username" required> <span
-                    id="usernameError">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td>password</td>
-            <td>
-                <input type="password" onblur="checkreq()" name="password" id="password" required> <span
-                    id="passwordError">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td>email</td>
-            <td>
-                <input type="email" onkeyup="checkemail(this)" onblur="checkreq()" name="email" id="email" required>
-                <span id="emailError">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td>mobile</td>
-            <td>
-                <input type="tel" onblur="checkreq()" name="mobile" id="mobile" required>
-                <span id="numbedEror">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td><input onclick="checkreq()" type="submit" value="save" name="save" id="save"></td>
-        </tr>
-    </table>
+    <form method="post" name="myform">
+
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" onblur="checkreq(this,'usernameError')" name="username" id="username" required>
+                    <span id="usernameError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>
+                    <input type="text" onblur="checkreq(this,'passwordError','type password')" name="password"
+                        id="password" required>
+                    <span id="passwordError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>
+                    <input type="email" onblur="checkreq(this,'emailError','type email')" onkeyup="checkemail(this)"
+                        name="email" id="email" required>
+                    <span id="emailError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td>
+                    <input type="tel" onblur="checkreq(this,'numbedEror','type number')" name="mobile" id="mobile"
+                        required>
+                    <span id="numbedEror">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td><input onclick="checkreq()" type="submit" value="submit" name="save" id="save"></td>
+            </tr>
+        </table>
+    </form>
+
 
 
     <script>
@@ -64,47 +71,15 @@
             }
         }
 
-        function checkreq() {
-            let username = document.getElementById("username").value;
-            console.log(username);
-            if (username == "") {
-                console.log("this fild is required");
-                document.getElementById("usernameError").innerHTML = "<b>this fild is requird</b>"
+        function checkreq(e, spn, msg) {
+            if (e.value != "") {
+                document.getElementById(spn, msg).innerHTML = "";
             } else {
-                document.getElementById("usernameError").innerHTML = ""
-
-            }
-            function checkreq() {
-                let password = document.getElementById("password").value;
-                console.log(password);
-                if (password == "") {
-                    // console.log("this fild is required");
-                    document.getElementById("passwordError").innerHTML = "<b>this fild is requird</b>"
-                } else {
-                    document.getElementById("passwordError").innerHTML = ""
-
-                }
-
-            }
-            function checkreq() {
-                let mobile = document.getElementById("mobile").value;
-                console.log(mobile);
-                if (mobile == "") {
-                    // console.log("this fild is required");
-                    document.getElementById("numbedEror").innerHTML = "<b>this fild is requird</b>"
-                } else {
-                    document.getElementById("numbedEror").innerHTML = ""
-
-                }
+                document.getElementById(spn, msg).innerHTML = "<b>This fild is requird</b>";
 
             }
 
         }
-        // function checkreq() {
-        //     let element = document.getElementById("save");
-        //     element.classList.remove("usernameError");
-        // }
-
 
     </script>
 </body>
