@@ -21,7 +21,8 @@
             <tr>
                 <td>User Name</td>
                 <td>
-                    <input type="text" onblur="checkreq(this,'usernameError')" name="username" id="username" required>
+                    <input type="text" onblur="checkreq(this,'usernameError','type username')" name="username"
+                        id="username" required>
                     <span id="usernameError">*</span>
                 </td>
             </tr>
@@ -73,9 +74,9 @@
 
         function checkreq(e, spn, msg) {
             if (e.value != "") {
-                document.getElementById(spn, msg).innerHTML = "";
+                document.getElementById(spn).innerHTML = "";
             } else {
-                document.getElementById(spn, msg).innerHTML = "<b>This fild is requird</b>";
+                document.getElementById(spn).innerHTML = msg;
 
             }
 
