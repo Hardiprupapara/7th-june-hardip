@@ -343,7 +343,7 @@
     margin-left: 90px;
 }
 
-.process div{
+.process div {
     height: 2px;
     background-color: #0b5e98;
 }
@@ -352,8 +352,8 @@
     background-color: #0b5e98;
 }
 
-.happy-lady img{
-  
+.happy-lady img {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,6 +362,7 @@
 
 
 }
+
 .lunch-txt h2 {
     font-size: 107px;
     letter-spacing: -4px;
@@ -390,7 +391,8 @@
     font-weight: 400;
     font-family: "Old Standard TT";
 }
-.span99{
+
+.span99 {
     top: 175px;
     left: 110px;
     font-size: 33px;
@@ -398,4 +400,11 @@
     color: #355e98;
     font-weight: 400;
     font-family: "Old Standard TT";
+}
+
+.vertical {
+    border-left: 6px solid black;
+    height: 120px;
+    position: absolute;
+    left: 50%;
 }
