@@ -509,14 +509,20 @@
 }
 
 
-.sec8-mlist {
+/* .sec8-mlist {
     padding: 71px;
+} */
+
+.sec8-menu1 {
+    width: 300px;
 }
 
+.sec8-menu1 img {
+    width: 100%;
+    object-fit: cover;
+}
 
-
-
-.sec8-mlist h2 {
+.sec8-mlist1 h2 {
     font-size: 35px;
     letter-spacing: -1px;
     line-height: 39px;
@@ -524,9 +530,11 @@
     font-weight: 600;
     text-transform: capitalize;
     font-family: "Poppins";
+    width: 200px;
+
 }
 
-.sec8-mlist p {
+.sec8-mlist1 p {
     font-size: 18px;
     letter-spacing: 0px;
     line-height: 26px;
@@ -534,6 +542,16 @@
     font-weight: 400;
     font-family: "Poppins";
 }
+
+
+
+/* .sec8-menu1 {
+    width: 300px;
+}
+
+.sec8-menu1 img {
+    width: 100%;
+} */
 
 .sec9-head h2 {
     padding: 15px 0;

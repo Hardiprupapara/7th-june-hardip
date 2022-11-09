@@ -78,8 +78,8 @@
         width: 85%;
     }
 
-    .sec8-mlist {
-        padding: 65px;
+    .sec8-mlist1 {
+        padding: 20px;
         margin-left: 40px;
         width: 300px;
     }
@@ -187,7 +187,7 @@
             width: 90%;
         }
 
-        .sec8-menu img {
+        .sec8-menu1 img {
             width: 100%;
         }
 
@@ -357,9 +357,9 @@
             width: 100%;
         }
 
-        .sec8-mlist {
+        /* .sec8-mlist {
             padding: 74px;
-        }
+        } */
 
         .sec5-img {
             margin-left: 100px;
@@ -403,3 +403,4 @@
             font-size: 98px;
         }
     }
+}
