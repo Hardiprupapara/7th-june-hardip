@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.align {
+    align-items: center;
+}
+
+.justify {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+}
+
+.head-list {
+    background-color: black;
+    padding: 5px 0;
+}
+
+.head-list a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-flist {
+    margin-left: auto;
+}
+
+.nav-flist a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0 10px;
+
+}
+
+.navbar {
+    width: 95%;
+    margin: 0 auto;
+}
