@@ -11,7 +11,7 @@
             border: 1px solid silver;
             border-radius: 1em;
             background: #eee;
-            max-width: 20em;
+            max-width: 40em;
         }
 
         .range>div {
@@ -23,7 +23,7 @@
 
         }
 
-        .range>div>span {
+        /* .range>div>span {
             position: relative;
             border-radius: 50%;
             top: 0px;
@@ -32,7 +32,7 @@
             width: 50px !important;
             color: white;
             border: 2px solid red;
-        }
+        } */
 
         .range>div[data-percent="10"] {
             width: 10%;
@@ -53,6 +53,18 @@
         .range>div[data-percent="50"] {
             width: 50%;
         }
+
+        .range>div[data-percent="60"] {
+            width: 60%;
+        }
+
+        .range>div[data-percent="70"] {
+            width: 70%;
+        }
+
+        .range>div[data-percent="100"] {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -68,6 +80,18 @@
     <p>skill in html</p>
     <div class="range">
         <div data-percent="40">40%</div>
+    </div>
+    <div class="range">
+        <div data-percent="50">50%</div>
+    </div>
+    <div class="range">
+        <div data-percent="60">60%</div>
+    </div>
+    <div class="range">
+        <div data-percent="70">70%</div>
+    </div>
+    <div class="range">
+        <div data-percent="100">100%</div>
     </div>
 </body>
 
