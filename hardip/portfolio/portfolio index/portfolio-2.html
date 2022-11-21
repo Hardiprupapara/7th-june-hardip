@@ -16,21 +16,23 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <!-- <div class="col-20"> -->
                 <div class="logo">
-                    <img src="./img/undraw_Pic_profile_re_7g2h.png" alt="">
+                    <a href="#">
+                        <img src="./img/undraw_Pic_profile_re_7g2h.png" alt="">
+                    </a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">about</a></li>
+                        <li><a href="#about">about</a></li>
                         <hr>
-                        <li><a href="#">my skill</a></li>
+                        <!-- <li><a href="#skill">my skill</a></li> -->
+                        <!-- <hr> -->
+                        <li><a href="#work">work</a></li>
                         <hr>
-                        <li><a href="#">work</a></li>
-                        <hr>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#contact">contact</a></li>
                         <hr>
                     </ul>
                 </div>
@@ -39,7 +41,7 @@
         </div>
         </div>
     </header>
-    <section id="sec-1">
+    <section id="home">
         <div class="container">
             <div class=" home">
                 <div class="body-txt">
@@ -61,7 +63,7 @@
         </div>
 
     </section>
-    <section id="sec-2">
+    <section id="about">
         <div class="container">
             <div class="home">
                 <div class="body-txt">
@@ -88,7 +90,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="work">
         <div class="container">
             <div class="home">
                 <div class="body-txt">
@@ -134,14 +136,57 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact">
         <div class="container">
             <div class="home">
-                <div class="contact">
-                    <div class="body-txt">
-                        <span id="sp3"> &lt;/h2&gt;</span>
+                <div class="row">
+
+                    <div class="col-50">
+                        <div class="body-txt">
+                            <span id="sp3"> &lt;h2&gt;</span>
+                        </div>
+                        <div class="contact">
+                            <h2>contact me</h2>
+                        </div>
+                        <div class="body-txt">
+                            <span id="sp3"> &lt;/h2&gt;</span>
+                            <span id="sp3"> &lt;p&gt;</span>
+                        </div>
+                        <div class="contact">
+                            <p>I'm interested in freelance opportunities - especially ambitious or large projects.
+                                However,
+                                if
+                                you have other request or question, don't hesitate to use the form.</p>
+                        </div>
+                        <div class="body-txt">
+                            <span id="sp3"> &lt;/p&gt;</span>
+                            <span id="sp3"> &lt;form&gt;</span>
+                        </div>
+                        <div class="contact-form row">
+                            <form action="#" method="post">
+                                <ul>
+                                    <li><input type="text" class="name" placeholder="name"></li>
+                                    <li><input type="text" class="surname" placeholder="surname"></li>
+                                    <li><input type="text" class="subject" placeholder="subject"></li>
+                                    <li><textarea placeholder="message" name="" id="msg" cols="30" rows="10"></textarea>
+                                    </li>
+                                </ul>
+                            </form>
+                            <div class="send-msg ">
+                                <button><a href="#">send message</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.1868921859686!2d72.51732351511367!3d23.05360882095211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b54d983bddf%3A0x9779e56fa66da34d!2sNew%20York%20Tower%20A%2C%20Patel%20Society%2C%20Jai%20Ambe%20Nagar%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054!5e0!3m2!1sen!2sin!4v1669043992147!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

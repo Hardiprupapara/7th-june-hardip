@@ -34,10 +34,15 @@
     background-color: #1d1d1d;
 }
 
+.col-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .logo img {
     width: 40%;
     display: block;
-    margin: auto;
+    margin: 50px;
     /* padding: 20px; */
 }
 
@@ -67,10 +72,10 @@ header {
 
 
 .home {
-    padding: 0px 15rem;
+    padding: 0px 10rem;
     padding-bottom: 63px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-flow: column;
 }
 
@@ -210,10 +215,8 @@ section {
     transform-origin: center -20px;
     float: left;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
+    margin: 20px;
 }
-
-
 
 
 .hanging img {
@@ -256,4 +259,79 @@ section {
     100% {
         transform: rotate(-3deg)
     }
+}
+
+.contact h2 {
+    width: 500px;
+    color: #08fdd8;
+    /* font-family: font-file-82132; */
+    font-weight: 400;
+    font-size: 6.3rem;
+    line-height: 8.7rem;
+    text-transform: capitalize;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #fff;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.contact-form ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+iframe {
+    padding-left: 0 !important;
+    height: 755px;
+}
+
+.contact-form input,
+textarea {
+    background-color: #2b2b2b;
+    border: none;
+}
+
+.name {
+    width: 240px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.surname {
+    width: 240px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.subject {
+    width: 494px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#msg {
+    margin: 5px;
+    width: 494px;
+    padding: 10px;
+}
+
+.send-msg button {
+    border: #08fdd8 2px solid;
+    background: transparent;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+}
+
+.send-msg button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #08fdd8;
+    text-align: end;
 }
