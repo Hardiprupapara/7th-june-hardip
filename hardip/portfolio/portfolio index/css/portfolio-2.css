@@ -335,3 +335,131 @@ textarea {
     color: #08fdd8;
     text-align: end;
 }
+
+/* text animation */
+
+.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: skyblue; */
+    /* background-image: linear-gradient(90deg, skyblue 0%, steelblue 100%); */
+}
+
+.text-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-radius: 100%;
+    background: transparent;
+    display: block;
+    /* box-shadow: 0 0 150px 100px rgba(255, 255, 255, 0.6),
+        200px 0 200px 150px rgba(255, 255, 255, 0.6),
+        -250px 0 300px 150px rgba(255, 255, 255, 0.6),
+        550px 0 300px 200px rgba(255, 255, 255, 0.6),
+        -550px 0 300px 200px rgba(255, 255, 255, 0.6); */
+}
+
+.text-box h1 {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    width: 50%;
+    /* margin-left: ; */
+    height: 100%;
+    /* margin: auto; */
+    display: block;
+    text-align: center;
+}
+
+.text-box h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.3s ease infinite alternate;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+        0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+        0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+    transition: all 5s;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0.1s;
+    color: red;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+
+h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+    color: red;
+    animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+    animation-delay: 0.6s;
+    color: red;
+}
+
+h1 span:nth-child(13) {
+    animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+    animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -10px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+            0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}
