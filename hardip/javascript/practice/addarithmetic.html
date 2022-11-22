@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="first_number" placeholder="NUMBER">
+    <input type="text" id="second_number" placeholder="NUMBER">
+    <select name="" id="arithmatic">
+        <option value="add" id="add">+</option>
+        <option value="minus" id="minus">-</option>
+        <option value="multiply" id="multiply">*</option>
+        <option value="device-width" id="dvid">/</option>
+        <option value="percnt" id="percnt">%</option>
+    </select>
+    <button onclick="btn_add()">click</button>
+    <input type="text" id="sum">
+    <script>
+        function btn_add() {
+            var a, b, c;
+            let symbol = parseInt(document.getElementById("arithmatic").value);
+            a = parseInt(document.getElementById("first_number").value);
+            b = parseInt(document.getElementById("second_number").value);
+            c = a + b;
+
+            document.getElementById("sum").value = c;
+        }
+    </script>
+</body>
+
+
+</html>
