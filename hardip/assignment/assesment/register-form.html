@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            border: 1px solid;
+        } */
+
+        table {
+            align-items: center;
+            width: 100%;
+            background-color: rgba(235, 234, 234, 0.781);
+        }
+
+        table tr td input {
+            display: inline;
+            width: 50%;
+            /* padding: 5px 0; */
+        }
+
+        table tr td:nth-child(1) {
+            width: 10%;
+        }
+
+        table tr td:nth-child(2) {
+            width: 90%;
+        }
+
+        p {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        textarea {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return true" , oncopy="return false" , onpaste="return false">
+
+
+    <table>
+        <tr>
+            <td><label for="#">first name</label></td>
+            <td><input type="text" placeholder="Enter your first name"></td>
+        </tr>
+        <tr>
+            <td><label for="#">last name</label></td>
+            <td><input type="text" placeholder="Enter your last name"></td>
+        </tr>
+        <tr>
+            <td><label for="#">email</label></td>
+            <td><input type="email" placeholder="it should contain @"></td>
+        </tr>
+        <tr>
+            <td><label for="#">mobile</label></td>
+            <td><input type="tel" placeholder="only 10 digits are allowed"></td>
+        </tr>
+        <tr>
+            <td><label for="#">gender</label></td>
+
+            <td>
+                <p>
+                    <input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">female
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">date of birth</label>
+            </td>
+            <td>
+                <input type="date" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">address</label></td>
+            <td><textarea name="address" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">city</label>
+            </td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">area pin</label>
+            </td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">state</label>
+            </td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">qualification</label>
+            </td>
+            <td>
+                <select name="select:qualification" id="">
+                    <option value="">10th pass</option>
+                    <option value="">12th pass</option>
+                    <option value="">diploma</option>
+                    <option value="">graduate</option>
+                    <option value="">post graduate</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">specialisation</label>
+            </td>
+            <td>
+                <p>
+
+                    <input type="checkbox" name="computer science" id="">
+                    <label for="#">computer science</label><br>
+
+                    <input type="checkbox" name="computer science" id=""><label for="#">information
+                        technology</label><br>
+                    <input type="checkbox" name="computer science" id=""><label for="#">computer
+                        architechnology</label><br>
+                    <input type="checkbox" name="computer science" id=""><label for="#">tele communication</label><br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">password</label></td>
+            <td><input type="password" name="" id=""></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="register" id="" value="register"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
