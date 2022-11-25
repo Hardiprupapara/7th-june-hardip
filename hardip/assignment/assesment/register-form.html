@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
     <style>
         /* * {
             border: 1px solid;
@@ -39,7 +41,13 @@
         textarea {
             width: 50%;
         }
+
+        .register {
+            background-color: rgb(18, 185, 18);
+            border: none;
+        }
     </style>
+
 </head>
 
 <body oncontextmenu="return true" , oncopy="return false" , onpaste="return false">
@@ -48,19 +56,31 @@
     <table>
         <tr>
             <td><label for="#">first name</label></td>
-            <td><input type="text" placeholder="Enter your first name"></td>
+            <td><input onblur="checkreq(this,'firstnameEror','Enter your first name')" type="text" id="name"
+                    placeholder="Enter your first name">
+                <span id="firstnameEror">*</span>
+            </td>
         </tr>
         <tr>
             <td><label for="#">last name</label></td>
-            <td><input type="text" placeholder="Enter your last name"></td>
+            <td><input id="lastname" onblur="checkreq(this,'lastnameEror','Enter your last name')" type="text"
+                    placeholder="Enter your last name">
+                <span id="lastnameEror">*</span>
+            </td>
         </tr>
         <tr>
             <td><label for="#">email</label></td>
-            <td><input type="email" placeholder="it should contain @"></td>
+            <td><input id="email" onblur="checkreq(this,'emaileror','Enter valid email')" type="email"
+                    placeholder="it should contain @">
+                <span id="emaileror">*</span>
+            </td>
         </tr>
         <tr>
             <td><label for="#">mobile</label></td>
-            <td><input type="tel" placeholder="only 10 digits are allowed"></td>
+            <td><input id="mobilenumber" onblur="checkreq(this,'mobileEror','Enter valid 10 digit mobil number')"
+                    type="tel" placeholder="only 10 digits are allowed">
+                <span id="mobileEror">*</span>
+            </td>
         </tr>
         <tr>
             <td><label for="#">gender</label></td>
@@ -70,6 +90,7 @@
                     <input type="radio" name="gender" value="male">male
                     <input type="radio" name="gender" value="female">female
                 </p>
+                <span id="genderEror">*</span>
             </td>
         </tr>
         <tr>
@@ -77,43 +98,56 @@
                 <label for="#">date of birth</label>
             </td>
             <td>
-                <input type="date" name="" id="">
+                <input onblur="checkreq(this,'dateEror','enter your  birth date')" type="date" name="" id="">
+                <span id="dateEror">*</span>
+
             </td>
         </tr>
         <tr>
             <td><label for="#">address</label></td>
-            <td><textarea name="address" id="" cols="30" rows="10"></textarea></td>
+            <td><textarea id="address" onblur="checkreq(this,'addreeEror','add your addrees')" name="address" id=""
+                    cols="30" rows="10"></textarea>
+                <span id="addreeEror">*</span>
+            </td>
         </tr>
         <tr>
             <td>
                 <label for="#">city</label>
             </td>
-            <td><input type="text" name="" id=""></td>
+            <td><input id="city" onblur="checkreq(this,'cityEror','enter your city')" type="text" name="" id="">
+                <span id="cityEror">*</span>
+            </td>
         </tr>
         <tr>
             <td>
                 <label for="#">area pin</label>
             </td>
-            <td><input type="text" name="" id=""></td>
+            <td><input id="area" onblur="checkreq(this,'pinEror','enter your pin')" type="text" name="" id="">
+                <span id="pinEror">*</span>
+            </td>
         </tr>
         <tr>
             <td>
                 <label for="#">state</label>
             </td>
-            <td><input type="text" name="" id=""></td>
+            <td><input id="state" onblur="checkreq(this,'stateEror','enter your state')" type="text" name="" id="">
+                <span id="stateEror">*</span>
+            </td>
         </tr>
         <tr>
             <td>
                 <label for="#">qualification</label>
             </td>
             <td>
-                <select name="select:qualification" id="">
+                <select id="qualification" onblur="checkreq(this,'quliEror','select qualification')"
+                    name="select:qualification" id="">
                     <option value="">10th pass</option>
                     <option value="">12th pass</option>
                     <option value="">diploma</option>
                     <option value="">graduate</option>
                     <option value="">post graduate</option>
                 </select>
+                <span id="quliEror">*</span>
             </td>
         </tr>
         <tr>
@@ -121,8 +155,7 @@
                 <label for="#">specialisation</label>
             </td>
             <td>
-                <p>
-
+                <p onblur="checkreq(this,'specialEror','select education')">
                     <input type="checkbox" name="computer science" id="">
                     <label for="#">computer science</label><br>
 
@@ -132,16 +165,52 @@
                         architechnology</label><br>
                     <input type="checkbox" name="computer science" id=""><label for="#">tele communication</label><br>
                 </p>
+                <span id="specialEror">*</span>
+
             </td>
         </tr>
         <tr>
             <td><label for="#">password</label></td>
-            <td><input type="password" name="" id=""></td>
+            <td><input id="password" onblur="checkreq(this,'passwordEror','enter 8 digit password')" type="password"
+                    name="" id="">
+                <span id="passwordEror">*</span>
+            </td>
         </tr>
         <tr>
-            <td><input type="button" name="register" id="" value="register"></td>
+            <td><input class="register" type="submit" onclick="checkreq()" name="register" id="submit" value="register">
+            </td>
         </tr>
     </table>
+
+    <script>
+        // function checkreq(e, spn, msg) {
+        //     if (e.value = " ") {
+        //         document.getElementById(spn).innerText = msg;
+
+
+        //     } else {
+        //         document.getElementById(spn).innerText = "";
+        //         // confirm(document.getElementById(spn).innerText = "");
+
+        //     }
+        // }
+        function checkreq(e) {
+            // var name = document.getElementById("name").value;
+            // var email = document.getElementById("email").value;
+            if (e.value == " ") {
+                // return false
+                alert("name must be filled out")
+            } else {
+
+            }
+
+
+
+        }
+
+    </script>
+
+
 </body>
 
 </html>
