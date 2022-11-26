@@ -50,7 +50,7 @@
 
 </head>
 
-<body oncontextmenu="return true" , oncopy="return false" , onpaste="return false">
+<body oncontextmenu="return false" , oncopy="return false" , onpaste="return false">
 
 
     <table>
@@ -183,30 +183,30 @@
     </table>
 
     <script>
-        // function checkreq(e, spn, msg) {
-        //     if (e.value = " ") {
-        //         document.getElementById(spn).innerText = msg;
+        function checkreq(e, spn, msg) {
+            if (e.value = " ") {
+                document.getElementById(spn).innerText = msg;
 
 
-        //     } else {
-        //         document.getElementById(spn).innerText = "";
-        //         // confirm(document.getElementById(spn).innerText = "");
-
-        //     }
-        // }
-        function checkreq(e) {
-            // var name = document.getElementById("name").value;
-            // var email = document.getElementById("email").value;
-            if (e.value == " ") {
-                // return false
-                alert("name must be filled out")
             } else {
+                document.getElementById(spn).innerText = "";
+                // confirm(document.getElementById(spn).innerText = "");
 
             }
-
-
-
         }
+        // function checkreq(e) {
+        //     // var name = document.getElementById("name").value;
+        //     // var email = document.getElementById("email").value;
+        //     if (e.value == " ") {
+        //         // return false
+        //         alert("name must be filled out")
+        //     } else {
+
+        //     }
+
+
+
+        // }
 
     </script>
 
