@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .align {
+            align-items: center;
+        }
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        header {
+            background-color: rgb(12, 12, 12);
+        }
+
+        .nav-menu li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .disp-block {
+            display: block !important;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        .bars {
+            display: block;
+        }
+
+        @media(min-width:700px) {
+            .container {
+                width: 680px;
+                margin: 0 auto;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            .bars {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="row justify">
+
+                <div class="logo">
+                    <img src="./assets/close.svg" alt="">
+                </div>
+
+                <div class="nav-menu" id="menu">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">work</a></li>
+                    </ul>
+                </div>
+                <div class="div-sidmenu">
+                    <!-- <img src="./assets/icon-burger.svg" alt=""> -->
+                    <button class="bars">bar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(".bars").click(() => { $("#menu").toggleClass('disp-block') });
+        function togglemenu() {
+            let menuitem = $("#menu").addClass('disp-block');
+            console.log(menuitem);
+        }
+    </script>
+</body>
+
+</html>
