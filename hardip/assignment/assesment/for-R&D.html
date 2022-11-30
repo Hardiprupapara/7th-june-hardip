@@ -53,16 +53,18 @@
         </div>
     </section>
     <script>
+
+        function check(e, spn, msg) {
+            if (e.value == "") {
+                document.getElementById(spn).innerHTML = msg;
+            }
+            else {
+                document.getElementById(spn).innerText = "";
+            }
+        }
         function myfunction() {
-            if (form == " ") {
-                function check(e, spn, msg) {
-                    if (e.value == "") {
-                        document.getElementById(spn).innerHTML = msg;
-                    }
-                    else {
-                        document.getElementById(spn).innerText = "";
-                    }
-                }
+            if (save == "") {
+                alert("plz fill the all fild")
             }
         }
 

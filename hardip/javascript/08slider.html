@@ -15,7 +15,7 @@
         @keyframes slider {
 
             to {
-                right: 0;
+                right: 0px;
             }
 
             from {
@@ -39,21 +39,21 @@
     <script>
         let slider_data = document.getElementsByClassName("slider-img")
         let count = 0
-        console.log(slider_data);
+        // console.log(slider_data);
         function slider() {
             for (let index = 0; index < slider_data.length; index++) {
-                console.log(slider_data[index]);
+                // console.log(slider_data[index]);
                 slider_data[index].style.display = "none"
-                // console.log("element", slider_data[index].classList.remove("slideranimation"));
+                console.log("element", slider_data[index].classList.remove("slideranimation"));
             }
             if (count >= slider_data.length) {
                 count = 0
             }
-            console.log("call", count);
-            console.log("element", slider_data[count]);
+            // console.log("call", count);
+            // console.log("element", slider_data[count]);
             slider_data[count].style.display = "block"
             console.log("element", slider_data[count].classList.add("slideranimation"));
-            console.log("call", count);
+            // console.log("call", count);
             count++
             setTimeout(slider, 3000)
 
