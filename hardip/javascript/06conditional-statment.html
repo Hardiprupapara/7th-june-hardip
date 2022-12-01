@@ -10,15 +10,21 @@
 
 <body>
     <script>
-        var mark = 0;
+        var mark = 50;
 
         // if (marks > 50) {
         //     console.log("pass");
         // } else {
         //     console.log("tray again");
         // }
-        if (mark > 50) {
-            if (mark > 50 && mark <= 60) {
+        if (mark > 33) {
+            if (mark > 33 && mark <= 40) {
+                console.log("pass");
+            }
+            else if (mark > 40 && mark <= 50) {
+                console.log("pass++");
+            }
+            else if (mark > 50 && mark <= 60) {
                 console.log("pass class");
             } else if (mark > 60 && mark <= 70) {
                 console.log("firstclass");
@@ -69,34 +75,25 @@
             default:
                 break;
         }
+        key = 3
+        switch (key) {
+            case 1:
+                console.log("my");
 
-        // word = 2
-        // switch (word) {
-        //     case 1:
-        //         console.log("english");
-        //         break;
-        //     case 2:
-        //         console.log("guj");
-        //         break;
+                break;
+            case 2:
+                console.log("min");
 
-        //     default:
-        //         break;
-        // }
-        // var mark = 51
-        // if (mark > 40) {
-        //     if (mark > 40 && mark <= 50) {
-        //         console.log("pass");
-        //     } else if (mark > 50 && mark <= 60) {
+                break;
+            case 3:
+                console.log("myself");
 
-        //         console.log("pass++");
-        //     }
+                break;
 
+            default:
+                break;
+        }
 
-
-        // }
-        // else {
-        //     console.log("tryagain");
-        // }
     </script>
 </body>
 
