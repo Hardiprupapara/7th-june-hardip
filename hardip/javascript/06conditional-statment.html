@@ -94,6 +94,26 @@
                 break;
         }
 
+        // let name = "Ilya";
+
+        // alert(`hello ${1}`); // ?
+
+        // alert(`hello ${"name"}`); // ?
+
+        // alert(`hello ${name}`); // ?
+        let sum = 0;
+
+        while (true) {
+
+            let value = +prompt("Enter a number", '');
+
+            if (!value) break; // (*)
+
+            sum += value;
+
+        }
+        alert('Sum: ' + sum);
+
     </script>
 </body>
 
