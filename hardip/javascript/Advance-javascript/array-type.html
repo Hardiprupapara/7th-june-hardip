@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>In JavaScript, arrays aren't primitives but are instead Array objects with the following core characteristics:
+    </p>
+    <p>array declaration = New array() / []</p>
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"><code>concat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"><code>copyWithin()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"><code>every()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>filter()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"><code>flat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"><code>flatMap()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"><code>forEach()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"><code>indexOf()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"><code>lastIndexOf()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"><code>map()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"><code>reduce()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight"><code>reduceRight()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"><code>reverse()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><code>slice()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"><code>some()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"><code>sort()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"><code>splice()</code></a></li>
+    </ul>
+
+
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries"><code>entries()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"><code>fill()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"><code>find()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"><code>findIndex()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast"><code>findLast()</code></a>
+        </li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex"><code>findLastIndex()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/group"><code>group()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/groupToMap"><code>groupToMap()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"><code>includes()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"><code>join()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys"><code>keys()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString"><code>toLocaleString()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values"><code>values()</code></a></li>
+    </ul>
+    <script>
+        // let arr = new Array("Data");
+        let arr = ["data", "test"];
+        // document.write = arr;
+        document.write(arr);
+        console.log(arr);
+        // console.log(arr[0]);
+        // console.log(arr[1]);
+
+
+        const fruits = ["apple", "banana"];
+        for (let index = 0; index < fruits.length; index++) {
+            const element = fruits[index];
+            console.log(element);
+        }
+        arr.forEach(element => {
+            console.log(element);
+        })
+        console.log(fruits.length);
+        console.log(fruits.indexOf('banana'));//indexof use for know to index number.
+        fruits.includes('banana');//???????
+
+        //(push):add item
+        const fruits1 = ['apple', 'banana'];
+        const newlength = fruits1.push('orange');
+        console.log(newlength);
+        console.log(fruits1);
+
+
+        //(pop):remove item
+        const fruits2 = ['apple', 'banana', 'orange'];
+        const removedata = fruits2.pop();//last item remove in array
+        const removedata1 = fruits2.pop();//second last item remove in array
+        const newlength1 = fruits2.push('orange');//add item in array{ ('push': use for add item),('pop: use for remove item')}
+        console.log(fruits2);
+        console.log(removedata);//last item remove in array
+        console.log(removedata1);//second last item remove in array
+        console.log(newlength1);
+
+
+        //(splice): use for remove item from starting point or ending point
+        const fruits3 = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Cherry'];
+        // const start = 1;// if we start index with + then array will start the second item
+        const start = -1;//if we start index with - then array will start the only last item
+        const removeitem = fruits3.splice(start);
+        // console.log(fruits3);
+        console.log(removeitem);
+
+
+        //(unshift): use for add item in start
+        const fruits4 = ['Banana', 'Mango'];
+        const newLength = fruits4.unshift('Strawberry');
+        console.log(fruits4);
+
+        //indexof
+        const fruits5 = ['Strawberry', 'Banana', 'Mango'];
+        const start1 = fruits5.indexOf('Banana');
+        const deleteCount = 1;
+        const removedItems = fruits5.splice(start, deleteCount);
+        console.log(fruits5);
+
+        //foreach loop
+        const fruits7 = ['Apple', 'Mango', 'Cherry'];
+        fruits.forEach((item, index, array) => {
+            console.log(item, index);
+        });
+
+    </script>
+</body>
+
+</html>
