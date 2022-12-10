@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //generator define with ('*');
+        function* fun() {
+            yield 10;
+            yield 20;
+            yield 30;
+            yield 40;
+        }
+        console.log(fun().next());
+        //second method with variable
+        var genrator = fun();
+        console.log(genrator.next());
+        console.log(genrator.next());
+        console.log(genrator.next());
+        console.log(genrator.next());
+    </script>
+</body>
+
+</html>
