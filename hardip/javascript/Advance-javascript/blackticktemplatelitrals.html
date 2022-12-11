@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="disp"></div>
+
+    <script>
+        var name = "user name"
+        //     let list = ' <ul>//if we want to write tage in js we use (``)rather then(''or""),bcz they dont print tag. 
+        //     <li></li>
+        // </ul>'
+        // let list="
+        // <ul>
+        //     <li></li>
+        // </ul>"
+        let list = ` <ul>
+        <li>${name}</li>
+    </ul>`
+        document.getElementById("disp").innerHTML = list
+    </script>
+</body>
+
+</html>

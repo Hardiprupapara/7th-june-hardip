@@ -9,6 +9,45 @@
 </head>
 
 <body>
+    <pre>
+        Objects are associative arrays with several special features.
+
+        They store properties (key-value pairs), where:
+
+        Property keys must be strings or symbols (usually strings).
+        Values can be of any type.
+        To access a property, we can use:
+
+        The dot notation: obj.property.
+        Square brackets notation obj["property"]. Square brackets allow taking the key from a variable, like obj[varWithKey].
+        Additional operators:
+
+        To delete a property: delete obj.prop.
+        To check if a property with the given key exists: "key" in obj.
+        To iterate over an object: for (let key in obj) loop.
+        What we’ve studied in this chapter is called a “plain object”, or just Object.
+
+        There are many other kinds of objects in JavaScript:
+
+        Array to store ordered data collections,
+        Date to store the information about the date and time,
+        Error to store the information about an error.
+        …And so on.
+        They have their special features that we’ll study later. Sometimes people say something like “Array type” or “Date type”, but formally they are not types of their own, but belong to a single “object” data type. And they extend it in various ways.
+
+        Objects in JavaScript are very powerful. Here we’ve just scratched the surface of a topic that is really huge. We’ll be closely working with objects and learning more about them in further parts of the tutorial.
+
+
+        Functions that are stored in object properties are called “methods”.
+        Methods allow objects to “act” like object.doSomething().
+        Methods can reference the object as this.
+        The value of this is defined at run-time.
+
+        When a function is declared, it may use this, but that this has no value until the function is called.
+        A function can be copied between objects.
+        When a function is called in the “method” syntax: object.method(), the value of this during the call is object.
+        Please note that arrow functions are special: they have no this. When this is accessed inside an arrow function, it is taken from outside.
+    </pre>
     <script>
         var a_maths = 90;
         var a_eng = 92;
@@ -17,6 +56,60 @@
         var result = { "maths": 90, "eng": 92, "guj": 93, "comp": 94 }
         console.log(result);
         console.log(result[0]);//this show undefine in index serching
+
+
+
+        //"object literal" syntax START
+        // let username = {
+        //     name: "john",//by key "name" store value "John"
+        //     age: 33//by key "age" store value 30
+        // }
+        // console.log(username);
+        // console.log(username.name);//we can find perticular value threw use of (.)and after the (.)write var name wich we want. 
+        // console.log(username.age);
+
+
+
+        // //square brackets
+
+        // let user = {};
+        // user["likes birds"] = true;
+        // alert(user["likes birds"]);
+        // delete user["likes birds"];
+        // console.log(user);
+
+        //object method
+        // let user = {
+        //     name: "john",
+        //     age: "42"
+        // };
+        // user.sayhi = () => {
+        //     console.log(user.age);
+        //     return "testing"
+        // }
+
+        // let user = {
+        //     name: "John",
+        //     age: 30,
+        //     // "this" is the "current object"
+        //     sayHi() {
+        //         alert(this.name);
+        //     }
+        // };
+        // console.log(user);
+        // console.log(user.sayHi);
+        // console.log(user.sayHi());
+
+
+        let user1 = {
+            firstName: "Ilya",
+            sayHi() {
+                let arrow = () => alert(this.firstName);
+                arrow();
+            }
+        };
+
+        user1.sayHi(); // Ilya
     </script>
 </body>
 
