@@ -11,8 +11,29 @@
 <body>
     <script>
         let recipemap = new Map([
+            ['cucumber', 500, 300, 330],
+            ['tomatoes', 350, 100, 330],
+            ['onion', 50, 200, 330]
+        ]);
+        // console.log(recipemap);
+        // for (let vegetable of recipemap.keys()) {
+        //     console.log(vegetable);
+        // }
 
-        ])
+        // for (let amount of recipemap.values()) {
+        //     console.log(amount); // 500, 350, 50
+        // }
+
+        // // // iterate over [key, value] entries
+
+        for (let entry of recipemap) { // the same as of recipeMap.entries()
+            console.log(entry); // cucumber,500 (and so on)
+            console.log(entry[0]); // cucumber,500 (and so on)
+            // console.log(entry[1]); // cucumber,500 (and so on)
+            // console.log(entry[2]); // cucumber,500 (and so on)
+
+            // console.log("vegi is : " + entry[0] + " Price is " + entry[1]);
+        }
     </script>
 </body>
 
