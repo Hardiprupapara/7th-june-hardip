@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+
+    Map - is a collection of keyed values.
+
+    Methods and properties:
+
+    new Map([iterable]) - creates the map, with optional iterable (e.g. array) of [key,value] pairs for initialization.
+    map.set(key, value) - stores the value by the key, returns the map itself.
+    map.get(key) - returns the value by the key, undefined if key doesn't exist in map.
+    map.has(key) - returns true if the key exists, false otherwise.
+    map.delete(key) - removes the element by the key, returns true if key existed at the moment of the call, otherwise
+    false.
+    map.clear() - removes everything from the map.
+    map.size - returns the current element count.
+    The differences from a regular Object:
+
+    Any keys, objects can be keys.
+    Additional convenient methods, the size property.
+    Set - is a collection of unique values.
+
+    Methods and properties:
+
+    new Set([iterable]) - creates the set, with optional iterable (e.g. array) of values for initialization.
+    set.add(value) - adds a value (does nothing if value exists), returns the set itself.
+    set.delete(value) - removes the value, returns true if value existed at the moment of the call, otherwise false.
+    set.has(value) - returns true if the value exists in the set, otherwise false.
+    set.clear() - removes everything from the set.
+    set.size - is the elements count.
+    Iteration over Map and Set is always in the insertion order, so we can't say that these collections are unordered,
+    but we can't reorder elements or directly get an element by its number
+    
+    </pre->
+    <p>Till now, we’ve learned about the following complex data structures: </p>
+    <ul>
+        <li>Objects are used for storing keyed collections.</li>
+        <li>Arrays are used for storing ordered collections.</li>
+    </ul>
+    <p>But that's not enough for real life. That's why Map and Set also exist.</p>
+
+    <p>Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of
+        any type.</p>
+    <ul>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/Map"><code>new Map()</code></a>
+            - creates the map.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set"><code>map.set(key, value)</code></a>
+            - stores the value by the key.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get"><code>map.get(key)</code></a>
+            - returns the value by the key, <code>undefined</code> if <code>key</code> doesn’t exist in map.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has"><code>map.has(key)</code></a>
+            - returns <code>true</code> if the <code>key</code> exists, <code>false</code> otherwise.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete"><code>map.delete(key)</code></a>
+            - removes the element (the key/value pair) by the key.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear"><code>map.clear()</code></a>
+            - removes everything from the map.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size"><code>map.size</code></a>
+            - returns the current element count.</li>
+    </ul>
+    <script>
+        const array1 = [1, 4, 9, 16];
+        const map1 = array1.map(x => x * 2);
+        array1.forEach(Element => {
+            console.log(Element);
+        })
+
+        //diffrence between in log without loop and perform loop.
+        const array2 = [7, 72, 17, 16];
+        console.log(array2);
+
+        //new map
+        const myMap = new Map(
+            [
+                [1, 'one'],
+                [2, 'two'],
+                [3, 'three'],
+            ]);
+        console.log(myMap);
+
+        //map set
+        const myMap2 = new Map();
+
+        // Add new elements to the map
+        myMap2.set('bar', 'foo');
+        myMap2.set(1, 'foobar');
+
+        // Update an element in the map
+        myMap2.set('bar', 'baz');
+        console.log(myMap2);
+
+
+        //map get
+        const myMap1 = new Map();
+        myMap1.set('bar', 'foo');
+
+        console.log(myMap1.get('bar')); // Returns "foo"
+        console.log(myMap1.get('baz')); // Returns undefined
+
+
+        let map = new Map();
+        map.set('1', 'str1');   // a string key
+        map.set(1, 'num1');     // a numeric key
+        map.set(true, 'bool1'); // a boolean key
+        console.log(map);
+        console.log(map.get(1));
+        console.log(map.get('1'));
+        console.log(map.size); // 3
+
+
+
+    </script>
+</body>
+</html>
