@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let username = "test";
+        // let password = "123";
+        let [username, password] = ["test", "123"];
+        console.log(username, password);
+
+
+        let user = {
+            name: "hardip",
+            age: 21
+        };
+        console.log(user);
+        console.log(Object.entries(user));//print like this(2) [Array(2), Array(2)]
+
+
+        for (let [key, value] of Object.entries(user)) {
+            // console.log(data[0]);
+            // console.log(data[0]);
+            console.log(`${key}:${value}`); // name:hardip, then age:21
+        }
+
+    </script>
+</body>
+
+</html>
