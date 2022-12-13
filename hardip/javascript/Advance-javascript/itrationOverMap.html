@@ -11,11 +11,22 @@
 <body>
     <script>
         let recipemap = new Map([
-            ['cucumber', 500, 300, 330],
-            ['tomatoes', 350, 100, 330],
-            ['onion', 50, 200, 330]
+            ['cucumber', 500,],
+            ['tomatoes', 350,],
+            ['onion', 50,]
         ]);
-        // console.log(recipemap);
+        //only array 
+        // data = [
+        //     ['cucumber', 500, "300", 330],
+        //     ['tomatoes', 350, "100", 330],
+        //     ['onion', 50, "200", 330]
+        // ]
+        // console.log(data[0][0]);
+        // console.log(data[0][1]);
+        // console.log(data[0][2]);
+        // console.log(data[0][3]);
+
+        console.log(recipemap);
         for (let vegetable of recipemap.keys()) {
             console.log(vegetable);
         }
@@ -25,15 +36,31 @@
         }
 
         // // // iterate over [key, value] entries
+        // recipemap.map((data) => {
+        //     console.log("called");
+        // })
+        let entry;
+        let count = 0;
 
-        for (let entry of recipemap) { // the same as of recipeMap.entries()
-            console.log(entry); // cucumber,500 (and so on)
-            console.log(entry[0]); // cucumber,500 (and so on)
+        for (entry of recipemap) { // the same as of recipeMap.entries()
+            // console.log(entry); // cucumber,500 (and so on)
             // console.log(entry[1]); // cucumber,500 (and so on)
-            // console.log(entry[2]); // cucumber,500 (and so on)
-
-            // console.log("vegi is : " + entry[0] + " Price is " + entry[1]);
+            // console.log("vegi is : " + entry[0][1] + " Price is " + entry[1]);
+            // kk == entry
+            // console.log(count);
+            // console.log(entry);
+            if (count == 2) {
+                // console.log("vegi is : " + entry[0] + " Price is " + entry[1]);
+                console.log(entry);
+                // console.log("inside if");
+                break;
+            }
+            count++;
         }
+
+
+
+
     </script>
 </body>
 
