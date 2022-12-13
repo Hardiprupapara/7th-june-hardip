@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let [name1, name2, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic", "data"];
+        // rest is array of items, starting from the 3rd one
+        console.log(rest[0]);//consul
+        console.log(rest[1]);//of the roman republic
+        console.log(rest.length);//length 3
+        console.log(rest);
+
+
+        function sum(x, y, z) {
+            console.log("value of X : ", x);
+            console.log("value of Y : ", y);
+            console.log("value of Z : ", z);
+            return x + y + z;
+        }
+        const numbers = [1, 2, 3];
+        // sum(numbers)
+        sum(numbers[0], numbers[1], numbers[2])
+        // sum(...numbers)
+        sum(45, 1, 4578)
+        // console.log(sum(...numbers));
+        console.log(sum.apply(null, numbers));
+        // expected output: 6
+    </script>
+</body>
+
+</html>
