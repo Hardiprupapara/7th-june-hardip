@@ -11,27 +11,29 @@
 <body>
 
     <script>
-        let john = { name: "John", surname: "Smith", id: 1 };
-        let pete = {
-            name: "Pete",
-            surname: "Hunt", id: 2
-        };
-        let mary = { name: "Mary", surname: "Key", id: 3 };
-        let users = [john, pete, mary];
+        // let salaries = {
+        //     "John": 100,
+        //     "Pete": 300,
+        //     "Mary": 250
+        // };
+        function sumSalaries(salaries) {
+            let sum = 0
+            for (let salary of Object.values(salaries)) {
+                sum += salary;
+            }
 
-        let usersMapped = users.map(user => ({
-            fullname: `${user.name}${user.surname}`,
-            id: users.id
-        }))
-             /* ... your code ... */
-/*
-usersMapped = [
-{ fullName: "John Smith", id: 1 },
-{ fullName: "Pete Hunt", id: 2 },
-{ fullName: "Mary Key", id: 3 }
-]
-*/ alert(usersMapped[0]) // 1 alert( usersMapped[0].fullName ) // John Smith
-        console.log(usersMapped);
+            return sum; // 650
+        }
+
+        let salaries = {
+            "John": 100,
+            "Pete": 300,
+            "Mary": 250
+        };
+
+        alert(sumSalaries(salaries)); // 650
+        console.log(sumSalaries(salaries));
+
     </script>
 </body>
 
