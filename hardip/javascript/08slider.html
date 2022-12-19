@@ -22,8 +22,6 @@
                 right: 900px;
             }
 
-
-
         }
     </style>
 </head>
@@ -37,29 +35,56 @@
     </div>
 
     <script>
-        let slider_data = document.getElementsByClassName("slider-img")
-        let count = 0
-        // console.log(slider_data);
+        // let slider_data = document.getElementsByClassName("slider-img")
+        // // let count = 0
+        // // console.log(slider_data);
+        // function slider() {
+        //     for (let index = 0; index < slider_data.length; index++) {
+        //         // console.log(slider_data[index]);
+        //         slider_data[index].style.display = "none"
+        //         console.log("element", slider_data[index].classList.remove("slideranimation"));
+        //     }
+        //     if (count >= slider_data.length) {
+        //         count = 0
+        //     }
+        //     console.log("call", count);
+        //     // console.log("element", slider_data[count]);
+        //     slider_data[count].style.display = "block"
+        //     console.log("element", slider_data[count].classList.add("slideranimation"));
+        //     // console.log("call", count);
+        //     count++
+        //     setTimeout(slider, 3000)
+
+        // }
+        // slider();
+
+
+
+
+        //new script
+
+        let slider_data1 = document.getElementsByClassName("slider-img")
+        let count1 = 0
         function slider() {
-            for (let index = 0; index < slider_data.length; index++) {
-                // console.log(slider_data[index]);
-                slider_data[index].style.display = "none"
-                console.log("element", slider_data[index].classList.remove("slideranimation"));
+            for (let index = 0; index < slider_data1.length; index++) {
+
+                slider_data1[index].style.display = "none"
+                console.log(slider_data1[index].classList.remove("slideranimation"));
             }
-            if (count >= slider_data.length) {
-                count = 0
+            if (count1 >= slider_data1.length) {
+                count1 = 0
             }
-            // console.log("call", count);
-            // console.log("element", slider_data[count]);
-            slider_data[count].style.display = "block"
-            console.log("element", slider_data[count].classList.add("slideranimation"));
-            // console.log("call", count);
-            count++
+            console.log(slider_data1[count1].classList.add("slideranimation"));
+            slider_data1[count1].style.display = "block"
+            count1++
             setTimeout(slider, 3000)
 
+
         }
-        slider();
+        slider()
     </script>
+
+
 </body>
 
 </html>
