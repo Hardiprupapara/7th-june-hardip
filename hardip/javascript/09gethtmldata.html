@@ -9,13 +9,17 @@
 </head>
 
 <body>
-    <input onkeyup="getInpData()" type="text" name="inp_name" class="inp_class" id="inp_id">
+    <!-- <input onkeypress="getInpData()" type="text" name="inp_name" class="inp_class" id="inp_id"> -->
+    <input onkeypress="getInpData()" type="text" name="prexa-name" id="prexa-id" class="prexa-class">
     <script>
         function getInpData() {
             // Get HTML Data To JavaScript Using ID START
             // var inpData = document.getElementById("inp_id")
+            var p_name = document.getElementById("prexa-id")
+            // var p_name = document.getElementsByName("prexa-name")
             // console.log(inpData);
             // console.log(inpData.value);
+            console.log(p_name.value);
             // Get HTML Data To JavaScript Using ID END
 
 
@@ -44,10 +48,10 @@
             // var inpData = document.querySelector("input")
             // var inpData = document.querySelector(".inp_class")
             // var inpData = document.querySelector("#inp_id")
-            var inpData = document.querySelectorAll("input")
+            // var inpData = document.querySelectorAll("input")
             // var inpData = document.querySelectorAll(".inp_class")
             // var inpData = document.querySelectorAll("#inp_id")
-            console.log(inpData);
+            // console.log(inpData);
         }
     </script>
 </body>
