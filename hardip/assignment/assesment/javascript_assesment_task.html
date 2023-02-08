@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" name="myform">
+
+        <table>
+            <tr>
+                <td>choice of booking</td>
+                <td><select name="" id="">
+                        <option value="">full day booking</option>
+                        <option value="">half day booking</option>
+                        <option value="">hourly day booking</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" onblur="checkreq(this,'usernameError','type username')" name="username"
+                        id="username" required>
+                    <span id="usernameError">*</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>email</td>
+                <td>
+                    <input type="email" onblur="checkreq(this,'emailError','type email')" onkeyup="checkemail(this)"
+                        name="email" id="email" required>
+                    <span id="emailError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td>
+                    <input type="tel" onblur="checkreq(this,'numbedEror','type number')" name="mobile" id="mobile"
+                        required>
+                    <span id="numbedEror">*</span>
+                </td>
+            </tr>
+            <td>number of person</td>
+            <td>
+                <input type="number" onblur="checkreq(this,'number_of_person_eror','type number of person')"
+                    name="number of person" id="num_of_person" required>
+                <span id="number_of_person_eror">*</span>
+            </td>
+            </tr>
+            <td>enter the date</td>
+            <td>
+                <input type="date" onblur="checkreq(this,'date','enter the date')" name="date" id="date" required>
+                <span id="date">*</span>
+            </td>
+            <tr>
+
+                <td>enter the time</td>
+                <td>
+                    <input type="time" onblur="checkreq(this,'date_time','enter the date_time')" name="date_time"
+                        id="date_time" required>
+                    <span id="date_time">*</span>
+                </td>
+            </tr>
+            <tr>
+
+                <td>enter the slot</td>
+                <td>
+                    <input type="datetime-local" onblur="checkreq(this,'date_slot','enter the date_slot')"
+                        name="date_slot" id="date_slot" required>
+                    <span id="date_slot">*</span>
+                </td>
+            </tr>
+            </tr>
+
+            <tr>
+                <td><input onclick="checkreq()" type="submit" value="submit" name="save" id="save"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script>
+
+        function checkemail(something) {
+            // console.log(something);
+            RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            console.log(RegEx.test(something.value));
+            if (RegEx.test(something.value)) {
+                document.getElementById("emailError").innerHTML = ""
+            } else {
+                document.getElementById("emailError").innerHTML = "invalid Format"
+
+            }
+        }
+
+        function checkreq(e, spn, msg) {
+            if (e.value != "") {
+                document.getElementById(spn).innerHTML = "";
+            } else {
+                document.getElementById(spn).innerHTML = msg;
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
