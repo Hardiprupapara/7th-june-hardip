@@ -1,0 +1,11 @@
+.panel-light {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(190, 218, 243);
+}
+
+.panel-dark {
+    height: 200px;
+    width: 400px;
+    background-color: black;
+}
