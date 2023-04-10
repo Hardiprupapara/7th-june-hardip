@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+
+        let array = [];
+        array[0] = "hero";
+        array[1] = "marvel";
+        array[2] = "john";
+        console.log(array[0]);
+
+
+        // const cars = ["Saab", "Volvo", "BMW"];
+        // console.log(cars);
+
+
+        const cars = ["Saab", "Volvo", "BMW"];
+        cars[0] = "newcar";
+        console.log(cars)
+
+
+
+
+
+
+        let heros = ["1", "2", "3"];
+        heros[1] = "new hero number"
+        // console.log(heros)
+        document.getElementById("demo").innerHTML = heros
+
+
+
+
+
+        const person = ["John", "Doe", 46];
+        document.getElementById("demo").innerHTML = person[0];
+
+
+
+        const personname = { firstname: "johnsina", secondname: "doe" };
+        document.getElementById("demo").innerHTML = personname.firstname + personname.secondname;
+
+        // *******************access last element***************
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits[fruits.length - 1])
+
+        //******************* Add element*****************
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.push("lemon")
+        console.log(fruits)
+
+        //************** remove element with pop************
+
+
+        var fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+        // document.getElementById("demo").innerHTML = fruits4.pop();
+        // document.getElementById("demo2").innerHTML = fruits4;
+
+
+        //************* shift() method removes the first array element **********
+
+        // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // document.getElementById("demo").innerHTML = fruits;
+        // document.getElementById("demo2").innerHTML = fruits.shift();
+
+
+
+        // add new element in start with unshift()
+
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // document.getElementById("demo2").innerHTML = fruits.unshift("lemon");
+        // document.getElementById("demo").innerHTML = fruits;
+
+
+        // ***********delet array element *****************
+
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // document.getElementById("demo").innerHTML = delete fruits[0];
+        // document.getElementById("demo").innerHTML = fruits;
+
+        // **********merg array or element***********
+
+        const arr1 = ["Cecilie", "Lone"];
+        const arr2 = ["Emil", "Tobias", "Linus"];
+        const arr3 = ["Robin", "Morgan"];
+        const myChildren = arr1.concat(arr2, arr3);
+        document.getElementById("demo").innerHTML = myChildren;
+
+
+        // *****************map method  in array********************
+
+        const numbers = [65, 44, 12, 4];
+
+        const map1 = numbers.map(x => x * 2)
+        console.log(map1)
+
+
+        const keearray=[
+            {key:1, value:10},
+            {key:2, value:20},
+            {key:3, value:30},
+        ];
+
+        const rearray=keearray.map(({key,value})=>(({[key]:value})));
+        console.log(rearray)
+
+
+        
+
+    </script>
+</body>
+
+</html>
