@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // find odd number in array*****************************************************************************************
+
+        const newarr = [12, 34, 22, 33, 31];
+        const odd = newarr.filter((num) => num % 2 === 1)
+        console.log(odd)
+
+        // find largest number in array****************************************************************************************************
+
+        var arr = [3, 6, 2, 56, 32, 5, 89, 32];
+        var largest = arr[0];
+
+        for (var i = 0; i < arr.length; i++) {
+            if (largest < arr[i]) {
+                largest = arr[i];
+            }
+        }
+        console.log(largest);
+
+
+
+        // find second highest Number***************************************************************************************
+
+        var arr = ['20', '120', '111', '215', '54', '78'];
+
+        arr.sort(function (a, b) {
+            return b - a;
+        });
+
+        console.log(arr[1]);
+
+
+        // print triangle ********************************************************************************************
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        // ******
+
+
+
+        for (let index = 0; index < 20; index++) {
+            for (let hp = 10; hp < index; hp++) {
+                document.write("*")
+
+            }
+            document.write("<br/>")
+
+        }
+
+    </script>
+</body>
+
+</html>
