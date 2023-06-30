@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const arr = ['apple', 'banana', 'cherry']
+        console.log(arr.length);
+
+
+        // Push Method:=> add item at last
+
+        const array = ['apple', 'banana', 'cherry']
+        array.push("strobary")
+        console.log(array);
+
+        // Unshift Method:=> add item at start
+
+        const array1 = ['apple', 'banana', 'cherry']
+        array1.unshift("strobary")
+        console.log(array1);
+
+        // POP Method:=> remove item at last
+
+        const array2 = ['apple', 'banana', 'cherry']
+        array2.pop()
+        console.log(array2);
+
+        // Shift Method:=> remove item at start
+
+        const array3 = ['apple', 'banana', 'cherry']
+        array3.shift()
+        console.log(array3);
+
+        // for loop
+
+        const actors = [
+            {
+                name: "actor1",
+                payment: 100
+            },
+            {
+                name: "actor2",
+                payment: 200
+            },
+            {
+                name: "actor3",
+                payment: 300
+            },
+            {
+                name: "actor4",
+                payment: 400
+            },
+        ]
+
+        // minus 10 rupees in all actors 
+
+        for (let index = 0; index < actors.length; index++) {
+            actors[index].payment = actors[index].payment - 10
+        }
+        // console.log(actors);
+
+        // Foreach loop
+
+        actors.forEach((actor) => {
+            actor.payment = actor.payment - 10
+        });
+        console.log(actors);
+
+        // Filter Method:=> for remove data which needed
+
+
+        const students = [
+            {
+                name: "hardip",
+                age: 22
+            },
+            {
+                name: "kaushik",
+                age: 25
+            },
+            {
+                name: "nandan",
+                age: 32
+            },
+            {
+                name: "vivek",
+                age: 36
+            },
+        ]
+
+
+        const age = students.filter((student) => student.age > 32)//method 3
+        //    {
+        //method 2  // return student.age>=32;
+        //method 1   // if (student.age>=32) { 
+        //     return true
+        // }else{
+        //     return false
+        // }
+        // });
+        console.log(age);
+
+
+        // Map Method:=> for return new array
+
+        const users = [
+            {
+                fname: "hardip",
+                lname: "rupapara"
+            },
+            {
+                fname: "nandan",
+                lname: "rathod"
+            },
+            {
+                fname: "kaushik",
+                lname: "valiya"
+            }
+        ];
+
+        const finaluser = users.map((user) => {
+            return {
+                fullname: `${user.fname} ${user.lname}`
+            }
+        });
+        console.log(finaluser);
+
+
+        // Find Method:=> for find data with id or key in array or object
+
+        const userdata = [
+            {
+                name: "xyz",
+                id: 1
+            },
+            {
+                name: "pqr",
+                id: 2
+            },
+            {
+                name: "abc",
+                id: 3
+            },
+        ]
+
+
+        const data = userdata.find((user) => {
+            if (user.id === 2) {
+                return true
+            }
+        })
+        console.log(data);
+
+
+        // Includes Method:=> for metch data 
+
+        const admins = [1, 2, 5]
+
+        const user1 = {
+            name: "xyz",
+            id: 5
+        }
+        const metchdata = admins.includes(user1.id)
+        console.log(metchdata);
+    </script>
+</body>
+
+</html>

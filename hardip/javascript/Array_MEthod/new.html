@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const array = [
+            {
+                name: "hardip",
+                age: 22,
+                id: 1
+            },
+            {
+                name: "avinash",
+                age: 21,
+                id: 2
+
+            },
+            {
+                name: "ronak",
+                age: 25,
+                id: 3
+            }
+        ]
+
+           
+        // joint name and age
+
+        const data = array.map((fullname) => {
+            return {
+                full_name: `${fullname.name} ${fullname.age}`
+            }
+        })
+        // console.log(data);
+
+        const abc=array.filter((user)=>user.age===25)
+        console.log(abc);
+
+        // find data with id wise
+
+        const finddata = array.find((arr1) => {
+            if (arr1.id == 3) {
+                return true
+            } else {
+                return false
+            }
+        })
+        // console.log(finddata);
+
+        // filter data which age is between 21 or to 25
+        const newarray = array.filter((arr) => {
+            if (arr.age >= 21, arr.age < 25) {
+                return true
+            } else {
+                return false
+            }
+        })
+        // console.log(newarray);
+        document.write(JSON.stringify(newarray))
+
+
+
+        const arra2 = [1, 2, 3]
+
+        const admin = [
+            {
+                name: "hardip",
+                id: 3
+            },
+            {
+                name: "ronak",
+                id: 4
+            }]
+
+        const newmetchdata = admin.find((user) => {
+            if (user.id === 1, user.id === 2, user.id === 3) {
+                return true
+            } else {
+                return false
+            }
+        })
+        console.log(newmetchdata);
+
+        // const metchdata=arra2.includes(admin[0].id)
+        // console.log(metchdata);
+        // console.log(admin[0].id);
+
+
+
+        const numbers = [1, 2, 3, 4, 5];
+        const stringifiedNumbers = numbers.join(', ');
+
+        console.log(stringifiedNumbers); // Output: "1, 2, 3, 4, 5"
+
+        const string = ["1", "2", "3"];
+        const number = string.map((str) => 
+            parseInt(str)
+        
+        )
+        console.log(number);
+
+    </script>
+</body>
+
+</html>
