@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <script>
 
+    <script>
         const array = [
             {
                 name: "hardip",
@@ -20,7 +20,7 @@
                 name: "avinash",
                 age: 21,
                 id: 2
-
+                
             },
             {
                 name: "ronak",
@@ -28,8 +28,9 @@
                 id: 3
             }
         ]
-
-           
+        
+        const newarr=array.find((user)=>user.age==25)
+        console.log(newarr);
         // joint name and age
 
         const data = array.map((fullname) => {
@@ -38,10 +39,11 @@
             }
         })
         // console.log(data);
-
+        
         const abc=array.filter((user)=>user.age===25)
         console.log(abc);
 
+      
         // find data with id wise
 
         const finddata = array.find((arr1) => {
@@ -61,6 +63,9 @@
                 return false
             }
         })
+
+        
+        // console.log(array3);
         // console.log(newarray);
         document.write(JSON.stringify(newarray))
 
@@ -105,6 +110,15 @@
         )
         console.log(number);
 
+
+       const arr=[1 ,21,2,22,42,32];
+       const newarrr=arr.sort()
+       console.log(newarrr[arr.length-2]);
+
+        for (let index = 0; index < 20; index+=2) {
+           
+            console.log(index);
+        }
     </script>
 </body>
 

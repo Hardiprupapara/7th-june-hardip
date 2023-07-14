@@ -9,7 +9,31 @@
 </head>
 
 <body>
+
+    <input type="text" placeholder="add url">
+    <button>dowenlod file</button>
     <script>
+        
+        const urlInput=document.querySelector("input");
+        const dowenloadBtn=document.querySelector("button");
+
+        dowenloadBtn.addEventListener("click",async()=>{
+            try{
+                const response =await fetch(urlInput.value);
+                const file=await response.blob();
+                const link =document.createElement("a");
+                link.href=URL.createObjectURL(file);
+                link.download=new Date().getTime();
+                link.click();
+
+            }catch(error){
+                alert("failed to dowenload the file")
+            }
+        });
+
+
+
+
         // find second largest number
         let array = [1, 10, 20, 32, 45, 21, 19, 18]
         let newarray = array.sort();
@@ -17,6 +41,23 @@
         console.log(newarray[array.length - 2]);
         console.log(newarray[1]);
 
+        // interview question(if age==age)then show in object is adult
+
+        let object =
+        {
+            name: "ajay",
+            age: 22
+        }
+
+
+
+        if (object.age === 22) {
+            object.isAdult = true
+        } else {
+            object.isAdult = false
+
+        }
+        console.log(object);
         // swap array number without using third variable
 
         let a = 10;
@@ -117,16 +158,42 @@
         }
 
         // find even odd number 
-        var mixnum=[10,11,12,13,14,15,16,17,18];
-        var evennum=mixnum.filter(mixnum=>mixnum%2==0)
-        var oddnum=mixnum.filter(mixnum=>mixnum%2!==0)
+        var mixnum = [10, 11, 12, 13, 14, 15, 16, 17, 18];
+        var evennum = mixnum.filter(mixnum => mixnum % 2 == 0)
+        var oddnum = mixnum.filter(mixnum => mixnum % 2 !== 0)
         console.log(evennum);
         console.log(oddnum);
 
-        let dupnum=[1,1,2,2,3,3,3,4,5,6,6,6]
-        let newdupnum=[...new Set(dupnum)]
+        let dupnum = [1, 1, 2, 2, 3, 3, 3, 4, 5, 6, 6, 6]
+        let newdupnum = [...new Set(dupnum)]
         console.log(newdupnum);
 
+
+        // find the word 
+
+        var abc ="loud";
+        var xyz ="silent";
+
+       var pqr= abc=xyz;
+
+        if (abc===xyz) {
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+
+
+        let word="rer";
+        var reversedWord = word.split('').reverse().join('');
+        // word === reversedWord;
+
+        if( word === reversedWord){
+            console.log(true);
+        }else{
+            console.log(false);
+        }
+
+        
     </script>
 </body>
 
