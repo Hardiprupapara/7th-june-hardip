@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid;   */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.raw {
+    display: flex;
+}
+
+.align_item {
+    align-items: center;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.logo {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+nav {
+    border-radius: 36px;
+    background-color: #333333;
+    padding: 10px;
+    margin: 55px 0 0 0;
+}
+
+@font-face {
+    font-family: Unna;
+    src: url(../Assets/font/Unna/Unna-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sacramento;
+    src: url(../Assets/font/Sacramento/Sacramento-Regular.ttf);
+}
+
+.sec1_txt {
+    margin: 59px 0;
+}
+
+.sec1_txt h2 {
+    font-size: 104px;
+    letter-spacing: 7px;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Unna";
+}
+
+.sec1_txt span {
+    margin: 39px 0;
+    font-size: 63px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Sacramento";
+}
+
+.sec1_txt p {
+    width: 400px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: left;
+}
+
+.nav_link ul li {
+    display: inline-block;
+    margin: 0 50px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.nav_link a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.justify_content_between {
+    justify-content: space-between;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.sec1_img img {
+    margin-left: 120px;
+    width: 80%;
+    display: block;
+}

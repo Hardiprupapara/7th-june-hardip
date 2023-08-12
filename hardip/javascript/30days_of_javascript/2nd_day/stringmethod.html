@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // charAt(): Takes index and it returns the value at that index
+        let name = "word"
+        console.log(name.charAt(0));
+        console.log(name[3]);
+
+
+        // charCodeAt(): Takes index and it returns char code(ASCII number) of the value at that index
+        let name1 = "newthing"
+        console.log(name1.charCodeAt(2), name1[2]); //code of "w" is 119
+
+
+        // concat(): it takes many substrings and creates concatenation.
+        // string.concat(substring, substring, substring)
+        let string = "30"
+        console.log(string.concat("day", "of", "javascript"));
+
+
+        // endsWith: it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
+        // string.endsWith(substring)
+
+        let word = "welcome to 30 day javascript task"
+        console.log(word.endsWith("task"));//true
+        console.log(word.endsWith("javascript"));//false
+
+
+        // includes(): It takes a substring argument and it check if substring argument exists in the string. includes() returns a boolean. It checks if a substring exist in a string and it returns true if it exists and false if it doesn't exist.
+
+        let string1 = "welcome to 30 day javascript task"
+        console.log(string1.includes("welcome"));//true
+        console.log(string1.includes("java"));//true
+        console.log(string1.includes("Script"));//false
+
+
+        // indexOf(): Takes takes a substring and if the substring exists in a string it returns the first position of the substring if does not exist it returns -1
+
+        let string2 = "welcome to 30 day javascript task"
+        console.log(string2.indexOf("a"));//15 index number
+        console.log(string2.indexOf("watch"));// -1 index number bcz not in substring
+
+
+        // lastIndexOf(): Takes takes a substring and if the substring exists in a string it returns the last position of the substring if it does not exist it returns -1
+
+        let string3 = 'I love JavaScript. If you do not love JavaScript what else can you love.'
+        console.log(string3.lastIndexOf('love'))       // 67
+        console.log(string3.lastIndexOf('you'))        // 63
+        console.log(string3.lastIndexOf('JavaScript')) // 38
+
+        // length: The string length method returns the number of characters in a string included empty space. Example:
+
+        let js = 'JavaScript'
+        console.log(js.length)        // 10
+        let firstName = 'Asabeneh'
+        console.log(firstName.length) // 8
+
+
+        // match: it takes a substring or regular expression pattern as an argument and it returns an array if there is match if not it returns null. Let us see how a regular expression pattern looks like. It starts with / sign and ends with / sign.
+
+        let string4 = 'love';
+        console.log(string4.match(string4));
+        let string5 = /love/gi;
+        console.log(string4.match(string5));
+
+        let txt = 'In 2019, I run 30 Days of Python. Now, in 2020 I super exited to start this challenge'
+        let regEx = /\d/g // d with escape character means d not a normal d instead acts a digit
+        // + means one or more digit numbers, 
+        // if there is g after that it means global, search everywhere.
+        console.log(txt.match(regEx)) // ["2", "0", "1", "9", "3", "0", "2", "0", "2", "0"]
+        console.log(txt.match(/\d+/g)) // ["2019", "30", "2020"]
+
+
+        // repeat(): it takes a number argument and it returned the repeated version of the string.
+
+        let string6 = "love"
+        console.log(string6.repeat(10));
+
+
+        // replace(): takes to parameter the old substring and new substring.
+        // string.replace(oldsubstring, newsubstring)
+
+        let string7 = "30 day of javasript";
+        console.log(string7.replace("javasript", "python")); // 30 day of python
+        let country = "finland"
+        console.log(country.replace("fin", "nom"));// nomland
+
+
+        // search: it takes a substring as an argument and it returns the index of the first match.
+        // string.search(substring)
+        let string8 = 'I love JavaScript. If you do not love JavaScript what else can you love.'
+        console.log(string8.search('love')) // 2
+
+
+        // split(): The split method splits a string at a specified place.
+
+        let string9 = "30 day of javasccript challange";
+        let string10 = "Finland, Sweden, Norway, Denmark, and Iceland"
+        console.log(string9.split());//[30 day of javasccript challange]
+        console.log(string9.split(''));// ['3', '0', ' ', 'd', 'a', 'y', ' ', 'o', 'f', ' ', 'j', 'a', 'v', 'a', 's', 'c', 'c', 'r', 'i', 'p', 't', ' ', 'c', 'h', 'a', 'l', 'l', 'a', 'n', 'g', 'e']
+        console.log(string9.split(' '));//['30', 'day', 'of', 'javasccript', 'challange']
+        console.log(string10.split(','));//['Finland', ' Sweden', ' Norway', ' Denmark', ' and Iceland']
+        console.log(string10.split(', '));//['Finland', 'Sweden', 'Norway', 'Denmark', 'and Iceland']
+
+
+        // startsWith: it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
+
+        let string11 = "word is valubel"
+        console.log(string11.startsWith('word'));//true
+        console.log(string11.startsWith('woRd'));//false
+
+
+        //substr(): It takes two arguments,the starting index and number of characters to slice.
+
+        let string12 = "valubel"
+        console.log(string12.substr(4, 6));//bel start with index 4 and end with index 6
+
+
+        // substring(): It takes two arguments,the starting index and the stopping index but it doesn't include the stopping index.
+
+        let string13 = 'JavaScript data'
+        console.log(string13.substring(0, 4))   // Java
+        console.log(string13.substring(4, 10))     // Script
+        console.log(string13.substring(4))    // Script data
+
+
+        // toLowerCase(): this method changes the string to lowercase letters.
+        let string14 = 'JAvasCript'
+        console.log(string14.toLowerCase())     // javascript
+
+
+        // toUpperCase(): this method changes the string to uppercase letters.
+
+        let string15= 'JavaScript'
+        console.log(string15.toUpperCase())      // JAVASCRIPT
+
+
+        //trim(): Removes trailing space in the beginning or the end of a string.
+
+        let string16="  word is beautiful  ";
+        console.log(string16.trim(''));
+
+
+        
+    </script>
+</body>
+
+</html>

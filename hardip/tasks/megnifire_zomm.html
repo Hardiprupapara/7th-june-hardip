@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Magnifier</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .main img {
+            cursor: zoom-in;
+        }
+
+        .zoom-preview {
+            height: 500px;
+            width: 500px;
+            /* border: 1px solid #000; */
+            margin-left: 20px;
+            background-repeat: no-repeat;
+        }
+        .main img{
+            border: 1px red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Magnifier</h1>
+    <p>Move your mouse over the image</p>
+    <div class="main">
+        <img src="https://images.unsplash.com/photo-1515091943-9d5c0ad475af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFsYWNlJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" 
+        id="gfg-img" height="300px" width="300px" />
+        <div class="zoom-preview"></div>
+    </div>
+    <script>
+        var img = document.getElementById("gfg-img");
+        var preview = document.querySelector(".zoom-preview");
+
+        //calculating the ratio by which we want to magnify the image
+        //you can increase or decrease it according to your requirement
+        var x = preview.offsetWidth / 100;
+        var y = preview.offsetHeight / 100;
+
+        img.addEventListener("mousemove", (e) => {
+            preview.style.backgroundImage ="url(https://images.unsplash.com/photo-1515091943-9d5c0ad475af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFsYWNlJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60)";
+            preview.style.backgroundSize = img.width * x +
+                "px " + img.height * y + "px";
+            var posX = e.offsetX;
+            var posY = e.offsetY;
+            preview.style.backgroundPosition = "-" + posX * x +
+                "px -" + posY * y + "px";
+        });
+        img.addEventListener("mouseout", () => {
+            preview.style.backgroundImage = "none";
+        });
+    </script>
+</body>
+
+</html>

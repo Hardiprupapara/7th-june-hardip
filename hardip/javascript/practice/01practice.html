@@ -6,32 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 
 <body>
-
-    <input type="text" placeholder="add url">
-    <button>dowenlod file</button>
     <script>
-        
-        const urlInput=document.querySelector("input");
-        const dowenloadBtn=document.querySelector("button");
 
-        dowenloadBtn.addEventListener("click",async()=>{
-            try{
-                const response =await fetch(urlInput.value);
-                const file=await response.blob();
-                const link =document.createElement("a");
-                link.href=URL.createObjectURL(file);
-                link.download=new Date().getTime();
-                link.click();
-
-            }catch(error){
-                alert("failed to dowenload the file")
-            }
-        });
-
-
+    
 
 
         // find second largest number
@@ -171,29 +152,44 @@
 
         // find the word 
 
-        var abc ="loud";
-        var xyz ="silent";
+        var abc = "loud";
+        var xyz = "silent";
 
-       var pqr= abc=xyz;
+        var pqr = abc = xyz;
 
-        if (abc===xyz) {
+        if (abc === xyz) {
             console.log(true)
-        }else{
+        } else {
             console.log(false)
         }
 
 
-        let word="rer";
+        let word = "rer";
         var reversedWord = word.split('').reverse().join('');
         // word === reversedWord;
 
-        if( word === reversedWord){
+        if (word === reversedWord) {
             console.log(true);
-        }else{
+        } else {
             console.log(false);
         }
 
-        
+        let index = 0;
+        var arry = [0, 1]
+        while (index <= 10) {
+            arry.push(arry[arry.length - 1] + 3);
+            index++;
+        }
+        console.log(arry);
+
+        // let index=0;
+        // var array123=[0,1]
+        // while (index<=10) {
+        //     array123.push(array123[array123.length-1]+3);
+        //     index++
+        // }
+        // console.log(array123);
+       
     </script>
 </body>
 
