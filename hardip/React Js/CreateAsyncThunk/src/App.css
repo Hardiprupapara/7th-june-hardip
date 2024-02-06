@@ -1,0 +1,119 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.inputField {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.inputField input {
+  width: 30%;
+  height: 50px;
+  padding-top: 25px;
+  background-color: ghostwhite;
+  border: none;
+  outline: none;
+}
+
+.inputField .inputanimet , .red-line::after , .green-line::after{
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.inputField .inputanimet::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  bottom: -1px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease;
+}
+
+.inputField .red-line::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  border-bottom: 3px solid red;
+  bottom: -1px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease;
+}
+
+.inputField .green-line::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  border-bottom: 3px solid green;
+  bottom: -1px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease;
+}
+
+.inputField input:focus .inputField input:valid {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.inputField input:focus+:after,
+.inputField input:valid+:after {
+  transform: translateX(0%);
+} 
+
+
+
+
+
+
