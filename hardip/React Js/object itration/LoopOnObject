@@ -1,0 +1,256 @@
+import React, { useState } from 'react'
+
+
+const LoopOnObject = () => {
+
+    const product_details = [
+        {
+            "id": 16,
+            "height": 0,
+            "gold_karat": 18,
+            "width": 0,
+            "gold_weight": 7.475,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "17",
+            "making_charges_rs": 3225.67,
+            "making_charges": 9,
+            "GST": 1192.69,
+            "gold_price": 35840.76,
+            "discount": 0,
+            "price": 40949.12,
+            "total_weight": 8.165
+        },
+        {
+            "id": 17,
+            "height": 0,
+            "gold_karat": 18,
+            "width": 0,
+            "gold_weight": 7.6,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 60,
+            "sizes": "18",
+            "making_charges_rs": 3279.61,
+            "making_charges": 9,
+            "GST": 1212.29,
+            "gold_price": 36440.1,
+            "discount": 0,
+            "price": 41622,
+            "total_weight": 8.29
+        },
+        {
+            "id": 18,
+            "height": 0,
+            "gold_karat": 19,
+            "width": 0,
+            "gold_weight": 7.725,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "19",
+            "making_charges_rs": 3333.55,
+            "making_charges": 9,
+            "GST": 1231.89,
+            "gold_price": 37039.44,
+            "discount": 0,
+            "price": 42294.88,
+            "total_weight": 8.415
+        },
+        {
+            "id": 19,
+            "height": 0,
+            "gold_karat": 19,
+            "width": 0,
+            "gold_weight": 7.85,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "20",
+            "making_charges_rs": 3387.49,
+            "making_charges": 9,
+            "GST": 1251.49,
+            "gold_price": 37638.79,
+            "discount": 0,
+            "price": 42967.77,
+            "total_weight": 8.54
+        },
+        {
+            "id": 20,
+            "height": 0,
+            "gold_karat": 20,
+            "width": 0,
+            "gold_weight": 7.975,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "21",
+            "making_charges_rs": 3441.43,
+            "making_charges": 9,
+            "GST": 1271.09,
+            "gold_price": 38238.13,
+            "discount": 0,
+            "price": 43640.65,
+            "total_weight": 8.665
+        },
+        {
+            "id": 21,
+            "height": 0,
+            "gold_karat": 20,
+            "width": 0,
+            "gold_weight": 8.1,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "22",
+            "making_charges_rs": 3495.37,
+            "making_charges": 9,
+            "GST": 1290.69,
+            "gold_price": 38837.47,
+            "discount": 0,
+            "price": 44313.53,
+            "total_weight": 8.79
+        },
+        {
+            "id": 22,
+            "height": 0,
+            "gold_karat": 21,
+            "width": 0,
+            "gold_weight": 8.225,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "23",
+            "making_charges_rs": 3549.31,
+            "making_charges": 9,
+            "GST": 1310.28,
+            "gold_price": 39436.82,
+            "discount": 0,
+            "price": 44986.42,
+            "total_weight": 8.915
+        },
+        {
+            "id": 23,
+            "height": 0,
+            "gold_karat": 21,
+            "width": 0,
+            "gold_weight": 8.35,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "24",
+            "making_charges_rs": 3603.25,
+            "making_charges": 9,
+            "GST": 1329.88,
+            "gold_price": 40036.16,
+            "discount": 0,
+            "price": 45659.3,
+            "total_weight": 9.04
+        },
+        {
+            "id": 24,
+            "height": 0,
+            "gold_karat": 22,
+            "width": 0,
+            "gold_weight": 8.475,
+            "diamond_weight": 0.966,
+            "no_of_diamond": 69,
+            "total_diamond_price": 690,
+            "diamond_price": 10,
+            "stock": 10,
+            "sizes": "25",
+            "making_charges_rs": 3657.2,
+            "making_charges": 9,
+            "GST": 1349.48,
+            "gold_price": 40635.51,
+            "discount": 0,
+            "price": 46332.18,
+            "total_weight": 9.165
+        }
+    ]
+
+
+
+    const newGoldCarret = [...new Set(product_details.map((item) => item.gold_karat).sort())]
+    const [karat, setKarat] = useState(newGoldCarret?.[0])
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
+    const handleKaratChange = (event) => {
+        const selectedKarat = event.target.value;
+        setKarat(Number(selectedKarat));
+    };
+
+    const handleSizeChange = (event) => {
+        const selectedSize = event.target.value;
+        const product = product_details.find((item) => item.sizes === selectedSize && item.gold_karat === karat);
+        setSelectedProduct(product);
+    };
+
+    return (
+        <React.Fragment>
+            <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', margin: '1rem' }}>
+                    <p>Gold Karet: </p>
+                    <select value={karat} onChange={handleKaratChange}>
+                        {newGoldCarret.map((gold_karat) =>
+                            <option key={gold_karat.id} value={gold_karat}>{gold_karat}</option>
+                        )}
+                    </select>
+                </div>
+                <div style={{ display: 'flex', margin: '1rem' }}>
+                    <p>Sizes: </p>
+                    <select onChange={handleSizeChange}>
+                        <option >select</option>
+                        {product_details.filter((item) => item.gold_karat === karat).map((item) =>
+                            <option key={item.id} value={item.sizes}>{item.sizes}</option>
+                        )}
+                    </select>
+                </div>
+            </div>
+            <div>
+
+                {selectedProduct && (
+                    <div>
+                        <h2>Selected Product Details</h2>
+                        <p>price: {selectedProduct.height}</p>
+                        <p>gold_karat: {selectedProduct.gold_karat}</p>
+                        <p>width: {selectedProduct.width}</p>
+                        <p>gold_weight: {selectedProduct.gold_weight}</p>
+                        <p>diamond_weight: {selectedProduct.diamond_weight}</p>
+                        <p>no_of_diamond: {selectedProduct.no_of_diamond}</p>
+                        <p>total_diamond_price: {selectedProduct.total_diamond_price}</p>
+                        <p>diamond_price: {selectedProduct.diamond_price}</p>
+                        <p>stock: {selectedProduct.stock}</p>
+                        <p>sizes: {selectedProduct.sizes}</p>
+                        <p>making_charges_rs: {selectedProduct.making_charges_rs}</p>
+                        <p>making_charges: {selectedProduct.making_charges}</p>
+                        <p>GST: {selectedProduct.GST}</p>
+                        <p>gold_price: {selectedProduct.gold_price}</p>
+                        <p>discount: {selectedProduct.discount}</p>
+                        <p>price: {selectedProduct.price}</p>
+                        <p>total_weight: {selectedProduct.total_weight}</p>
+                    </div>
+                )}
+            </div>
+        </React.Fragment>
+    )
+}
+
+export default LoopOnObject
