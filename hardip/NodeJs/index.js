@@ -1,10 +1,12 @@
 const express = require('express');
-const mysql = require('mysql');
+var cors = require('cors')
 const app = express();
+const mysql = require('mysql');
 const hostname = '127.0.0.1';
 const port = 4000;
 
 // Middleware to parse JSON bodies
+app.use(cors())
 app.use(express.json());
 
 // MySQL connection
@@ -25,7 +27,7 @@ connection.connect((err) => {
 });
 
 // GET all posts from MySQL
-app.get('/api/posts', (req, res) => {
+app.get('/api/posts', cors(), (req, res) => {
     connection.query('SELECT * FROM userdb.customer', (error, results, fields) => {
         if (error) {
             console.error('Error fetching data from MySQL: ' + error.stack);
@@ -36,7 +38,7 @@ app.get('/api/posts', (req, res) => {
 });
 
 // GET a post by id from MySQL
-app.get('/api/posts/:id', (req, res) => {
+app.get('/api/posts/:id',cors(), (req, res) => {
     const id = req.params.id;
     connection.query('SELECT * FROM userdb.customer WHERE id = ?', [id], (error, results, fields) => {
         if (error) {
@@ -51,7 +53,7 @@ app.get('/api/posts/:id', (req, res) => {
 });
 
 // POST a new post to MySQL
-app.post('/api/posts', (req, res) => {
+app.post('/api/posts', cors(),(req, res) => {
     const body = req.body;
     connection.query('INSERT INTO userdb.customer SET ?', body, (error, results, fields) => {
         if (error) {
@@ -63,7 +65,7 @@ app.post('/api/posts', (req, res) => {
 });
 
 // PATCH update a post in MySQL
-app.patch('/api/posts/:id', (req, res) => {
+app.patch('/api/posts/:id',cors(), (req, res) => {
     const id = req.params.id;
     const updates = req.body;
     connection.query('UPDATE userdb.customer SET ? WHERE id = ?', [updates, id], (error, results, fields) => {
@@ -76,7 +78,7 @@ app.patch('/api/posts/:id', (req, res) => {
 });
 
 // DELETE a post from MySQL
-app.delete('/api/posts/:id', (req, res) => {
+app.delete('/api/posts/:id',cors(), (req, res) => {
     const id = req.params.id;
     connection.query('DELETE FROM userdb.customer WHERE id = ?', [id], (error, results, fields) => {
         if (error) {
