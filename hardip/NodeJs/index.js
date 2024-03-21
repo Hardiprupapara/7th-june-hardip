@@ -1,4 +1,5 @@
 const express = require('express');
+const mysql = require('mysql');
 const app = express();
 const hostname = '127.0.0.1';
 const port = 4000;
@@ -6,64 +7,85 @@ const port = 4000;
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Mock data (replace this with a database)
-let users = [{ "id": 1, "first_name": "Sidoney", "last_name": "Morris", "email": "smorris0@github.com", "gender": "Female" },
-{ "id": 2, "first_name": "Caddric", "last_name": "Backsal", "email": "cbacksal1@reference.com", "gender": "Male" },
-{ "id": 3, "first_name": "Kenon", "last_name": "Bulfit", "email": "kbulfit2@cpanel.net", "gender": "Genderfluid" },
-{ "id": 4, "first_name": "Cate", "last_name": "Olenchikov", "email": "colenchikov3@hao123.com", "gender": "Female" },
-{ "id": 5, "first_name": "Jayme", "last_name": "Kobelt", "email": "jkobelt4@netscape.com", "gender": "Male" },
-{ "id": 6, "first_name": "Rosaleen", "last_name": "Willatts", "email": "rwillatts5@biblegateway.com", "gender": "Female" },
-{ "id": 7, "first_name": "Orland", "last_name": "Frounks", "email": "ofrounks6@privacy.gov.au", "gender": "Male" },
-{ "id": 8, "first_name": "Ira", "last_name": "Maillard", "email": "imaillard7@bing.com", "gender": "Male" },
-{ "id": 9, "first_name": "Renell", "last_name": "Taill", "email": "rtaill8@imdb.com", "gender": "Female" },
-{ "id": 10, "first_name": "Casi", "last_name": "Greenroad", "email": "cgreenroad9@i2i.jp", "gender": "Female" }];
+// MySQL connection
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Hardip@1432',
+    database: 'sys'
+});
 
-// GET all posts
+// Connect to MySQL
+connection.connect((err) => {
+    if (err) {
+        console.error('Error connecting to MySQL: ' + err.stack);
+        return;
+    }
+    console.log('Connected to MySQL as id ' + connection.threadId);
+});
+
+// GET all posts from MySQL
 app.get('/api/posts', (req, res) => {
-    return res.json(users);
+    connection.query('SELECT * FROM userdb.customer', (error, results, fields) => {
+        if (error) {
+            console.error('Error fetching data from MySQL: ' + error.stack);
+            return res.status(500).json({ message: 'Internal Server Error' });
+        }
+        res.json(results);
+    });
 });
 
-
+// GET a post by id from MySQL
 app.get('/api/posts/:id', (req, res) => {
-    const id = req.params.id
-    const user = users.find((user) => Number(user.id) === Number(id))
-    res.json(user);
+    const id = req.params.id;
+    connection.query('SELECT * FROM userdb.customer WHERE id = ?', [id], (error, results, fields) => {
+        if (error) {
+            console.error('Error fetching data from MySQL: ' + error.stack);
+            return res.status(500).json({ message: 'Internal Server Error' });
+        }
+        if (results.length === 0) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        res.json(results[0]);
+    });
 });
 
+// POST a new post to MySQL
 app.post('/api/posts', (req, res) => {
     const body = req.body;
-    console.log(req.body, "body")
-    users.push(body, id = users.length + 1);
-    res.json({ status: "success", users });
+    connection.query('INSERT INTO userdb.customer SET ?', body, (error, results, fields) => {
+        if (error) {
+            console.error('Error inserting data into MySQL: ' + error.stack);
+            return res.status(500).json({ message: 'Internal Server Error', error: error });
+        }
+        res.json({ status: 'success', user: { ...body, id: results.insertId } });
+    });
 });
 
-app.patch('/api/users/:id', (req, res) => {
-    const id = parseInt(req.params.id);
-    const updates = req.body;
-
-    const userIndex = users.findIndex(user => user.id === id);
-    if (userIndex === -1) {
-        return res.status(404).json({ message: 'User not found' });
-    }
-
-    const updatedUser = { ...users[userIndex], ...updates };
-    users[userIndex] = updatedUser;
-
-    return res.json({ status: 'success', user: updatedUser });
-});
-
-
-app.delete('/api/users/:id', (req, res) => {
+// PATCH update a post in MySQL
+app.patch('/api/posts/:id', (req, res) => {
     const id = req.params.id;
-    let userIndex = users.findIndex((user) => user.id === id);
-    if (userIndex !== -1) {
-        users.splice(userIndex, 1);
-        return res.json({ status: "success", users });
-    } else {
-        return res.status(404).json({ message: "User not found" });
-    }
+    const updates = req.body;
+    connection.query('UPDATE userdb.customer SET ? WHERE id = ?', [updates, id], (error, results, fields) => {
+        if (error) {
+            console.error('Error updating data in MySQL: ' + error.stack);
+            return res.status(500).json({ message: 'Internal Server Error' });
+        }
+        res.json({ status: 'success', user: { ...updates, id: id } });
+    });
 });
 
+// DELETE a post from MySQL
+app.delete('/api/posts/:id', (req, res) => {
+    const id = req.params.id;
+    connection.query('DELETE FROM userdb.customer WHERE id = ?', [id], (error, results, fields) => {
+        if (error) {
+            console.error('Error deleting data from MySQL: ' + error.stack);
+            return res.status(500).json({ message: 'Internal Server Error' });
+        }
+        res.json({ status: 'success', message: 'User deleted successfully' });
+    });
+});
 
-
+// Start the server
 app.listen(port, () => console.log(`Server running on http://${hostname}:${port}/`));
