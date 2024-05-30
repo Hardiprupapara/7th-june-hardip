@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.fb {
+  color: #1877F2;
+}
+
+.google {
+  color: #c68235;
+}
+
+.twit {
+  color: #1DA1F2;
+}
+
+/* sidebar */
+.sidbar-logo img {
+  width: 50%;
+  scale: 1.9;
+}
+
+.sisebar {
+  position: fixed !important;
+  z-index: 9999;
+  min-height: calc(100vh - 250px);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.sisebar::-webkit-scrollbar {
+  width: .2em;
+}
+
+.sisebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sisebar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.menu-aside .menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-aside {
+  list-style: none;
+}
+
+.menu-aside .menu-link {
+  padding: 10px;
+  color: #29335d;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.menu-aside a {
+  display: block;
+  text-decoration: none;
+}
+
+.menu-aside .menu-link .text {
+  vertical-align: middle;
+}
+
+
+.menu-aside .active {
+  background-color: #ebf0fd;
+}
+
+.menu-aside .menu-link:hover {
+  transition: .2s linear;
+  background-color: #e9ecef;
+}
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  .sisebar {
+    /* border: 1px solid black; */
+    position: sticky !important;
+    top: 0;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+.sidebar {
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-close-btn {
+  right: 10px;
+  top: 10px;
+}
+
+.sidebar-logo img {
+  max-width: 25%;
+  scale: 2;
+  height: auto;
+}
+
+.menu-aside {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-link:hover,
+.menu-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.menu-link .icon {
+  font-size: 18px;
+  width: 24px;
+}
+
+
+.bg-lightPrimary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 254 / var(--tw-bg-opacity));
+}
+
+h2 {
+  overflow: hidden;
+}
+
+.navbar-pad {
+  padding: 17px;
+}
+
+.box-shd {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card-header {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  margin-bottom: 0;
+  color: var(--bs-card-cap-color);
+  background-color: rgb(92 99 107 / 16%) !important;
+  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.user-shdow {
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.error {
+  color: red;
+}
+
+/* User List */
+
+
+
+.custom-add-button {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-add-button:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+
+#style-4 {
+  height: 400px;
+}
+
+#style-4::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(46, 46, 46, 0.3);
+  background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  border: 2px solid #555555;
+}
+
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary,
+.btn-danger {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-secondary:hover,
+.btn-danger:hover {
+  transform: scale(1.05);
+}
+
+input.form-control {
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: box-shadow 0.3s;
+}
+
+input.form-control:focus {
+  border: 1px solid black !important;
+}
