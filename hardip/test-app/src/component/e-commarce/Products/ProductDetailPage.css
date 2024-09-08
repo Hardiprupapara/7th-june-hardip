@@ -1,0 +1,23 @@
+.product-page {
+    margin-top: 20px;
+  }
+  
+  .product-page .price {
+    font-size: 1.5rem;
+    color: #b12704;
+  }
+  
+  .product-page .description {
+    margin-top: 10px;
+  }
+  
+  .product-page .rating {
+    font-size: 1.2rem;
+    color: #ff9800;
+  }
+  
+  .product-page .seller, .product-page .delivery-date {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  

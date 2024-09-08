@@ -1,0 +1,32 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    width: 100px;
+  }
+  
+  .img-fluid {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .input-group {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-block {
+    width: 100%;
+  }
+  
