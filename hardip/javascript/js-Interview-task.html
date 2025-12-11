@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // reverse number
+
+        let num = 836824121
+        let rev = 0
+        while (num > 0) {
+            let digit = num % 10
+            rev = rev * 10 + digit
+            num = Math.floor(num / 10)
+        }
+
+        console.log(rev)
+        // remove dummy element
+
+        let arr = [1, 2, 3, 4, 5, 2, 21, 3]
+        let newarr = [...new Set(arr)]
+        console.log(newarr, "newarr")
+        let dummy = []
+
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[i] === arr[j]) {
+                    dummy.push(arr[i])
+                    break
+                }
+            }
+        }
+
+        console.log(dummy)
+
+        // find exclusive ammount
+
+        function getfinalamount(price, tax) {
+            const finalprice = price * (1 + tax / 100)
+            return finalprice
+        }
+        const amount = getfinalamount(100, 5)
+        console.log(amount)
+
+        // find inclusive amount
+
+        function getbaseamount(price, tax) {
+            const baseprice = (price * 100) / (tax + 100)
+            return baseprice
+        }
+
+        const actualamount = getbaseamount(100, 5)
+        console.log(actualamount)
+
+
+        for (var i = 1; i <= 10; i++) {
+            let row = ""
+            for (var j = 1; j <= 10 - i; j++) {
+                row += " "
+            }
+            for (var s = 1; s <= (2 * i - 1); s++) {
+                row += "*"
+            }
+            console.log(row)
+        }
+
+
+        // find peak element
+
+        function findpeakelement(arr) {
+            let peakindex = []
+            let peakvalue = []
+            for (var i = 0; i < arr.length; i++) {
+                if (
+                    (i === 0 || arr[i] > arr[i - 1]) &&
+                    (i === arr.length - 1 || arr[i] > arr[i + 1])
+                ) {
+                    peakindex.push(i)
+                    peakvalue.push(arr[i])
+                }
+            }
+            return { index: peakindex, value: peakvalue }
+        }
+        let peakarr = [1, 2, 3, 4, 2, 5]
+        const result = findpeakelement(peakarr)
+        console.log(result.index)
+        console.log(result.value)
+
+
+
+
+    </script>
+</body>
+
+</html>
