@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Employee Time Tracker</title>
+<style>
+body{font-family:Arial;background:#f5f5f5;padding:20px}
+.container{max-width:800px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px #ccc}
+button{padding:8px 14px;margin:3px;font-size:14px;border:none;border-radius:6px;cursor:pointer}
+#inBtn{background:green;color:#fff}
+#outBtn{background:red;color:#fff}
+.edit{background:#007bff;color:white}
+.delete{background:#d9534f;color:white}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th,td{border:1px solid #999;padding:8px;text-align:center}
+.summary{margin-top:20px;font-size:18px;font-weight:bold}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>Employee Punch System</h2>
+
+<p><b>Status:</b> <span id="status">Not Working</span></p>
+<p><b>Punch In Time:</b> <span id="inTime">--</span></p>
+
+<button id="inBtn">Punch In</button>
+<button id="outBtn" disabled>Punch Out</button>
+
+<h3>Monthly Attendance</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Punch In</th>
+<th>Punch Out</th>
+<th>Total Time</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="records"></tbody>
+</table>
+
+<div class="summary">
+Total Monthly Time: <span id="totalMonth">00:00:00</span>
+</div>
+
+</div>
+
+<script>
+let inTime = null;
+const statusEl = document.getElementById("status");
+const inTimeEl = document.getElementById("inTime");
+const recordsEl = document.getElementById("records");
+const totalMonthEl = document.getElementById("totalMonth");
+
+const monthKey = new Date().getMonth() + "-" + new Date().getFullYear();
+
+function loadData(){
+    let data = JSON.parse(localStorage.getItem(monthKey)) || [];
+    recordsEl.innerHTML = "";
+    let totalSeconds = 0;
+
+    data.forEach((r,i)=>{
+        let tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${r.date}</td>
+            <td>${r.in}</td>
+            <td>${r.out}</td>
+            <td>${r.total}</td>
+            <td>
+                <button class="edit" onclick="editRecord(${i})">Edit</button>
+                <button class="delete" onclick="deleteRecord(${i})">Delete</button>
+            </td>`;
+        recordsEl.appendChild(tr);
+
+        let parts = r.total.split(":");
+        totalSeconds += (+parts[0])*3600 + (+parts[1])*60 + (+parts[2]);
+    });
+
+    totalMonthEl.innerText = secondsToTime(totalSeconds);
+}
+loadData();
+
+function secondsToTime(sec){
+    let h = Math.floor(sec/3600);
+    let m = Math.floor((sec%3600)/60);
+    let s = sec%60;
+    return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+document.getElementById("inBtn").onclick = ()=>{
+    inTime = new Date();
+    inTimeEl.innerText = inTime.toLocaleTimeString();
+    statusEl.innerText = "Working...";
+    document.getElementById("inBtn").disabled = true;
+    document.getElementById("outBtn").disabled = false;
+};
+
+document.getElementById("outBtn").onclick = ()=>{
+    if(!inTime) return;
+
+    let outTime = new Date();
+    let diff = Math.floor((outTime - inTime)/1000);
+
+    let record = {
+        date: new Date().toLocaleDateString(),
+        in: inTime.toLocaleTimeString(),
+        out: outTime.toLocaleTimeString(),
+        total: secondsToTime(diff)
+    };
+
+    let data = JSON.parse(localStorage.getItem(monthKey)) || [];
+    data.push(record);
+    localStorage.setItem(monthKey, JSON.stringify(data));
+
+    inTime = null;
+    inTimeEl.innerText = "--";
+    statusEl.innerText = "Not Working";
+    document.getElementById("inBtn").disabled = false;
+    document.getElementById("outBtn").disabled = true;
+    loadData();
+};
+
+// EDIT RECORD
+function editRecord(index){
+    let data = JSON.parse(localStorage.getItem(monthKey)) || [];
+    let r = data[index];
+
+    let newIn = prompt("Enter Punch In Time (HH:MM:SS)", r.in);
+    if(!newIn) return;
+
+    let newOut = prompt("Enter Punch Out Time (HH:MM:SS)", r.out);
+    if(!newOut) return;
+
+    let start = new Date("01/01/2000 " + newIn);
+    let end = new Date("01/01/2000 " + newOut);
+
+    let diff = Math.floor((end - start)/1000);
+    if(diff < 0){ alert("Out time wrong!"); return;}
+
+    r.in = newIn;
+    r.out = newOut;
+    r.total = secondsToTime(diff);
+
+    data[index] = r;
+    localStorage.setItem(monthKey, JSON.stringify(data));
+    loadData();
+}
+
+// DELETE RECORD
+function deleteRecord(index){
+    let data = JSON.parse(localStorage.getItem(monthKey)) || [];
+    if(confirm("Delete this record?")){
+        data.splice(index,1);
+        localStorage.setItem(monthKey, JSON.stringify(data));
+        loadData();
+    }
+}
+</script>
+</body>
+</html>
